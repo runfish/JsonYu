@@ -1,0 +1,12 @@
+#Sat Apr 06 16:00:13 CST 2013
+tomcat6Server.ognl.earProjectName=
+tomcat6Server.ognl.shouldBackup=false
+tomcat6Server.ognl.shouldOverwrite=false
+tomcat6Server.ognl.deployIsOverProject=false
+tomcat6Server.ognl.isDeployed=true
+tomcat6Server.ognl.type=WebDeployment
+tomcat6Server.ognl.contextRoot=/ognl
+eclipse.preferences.version=1
+tomcat6Server.ognl.isExploded=true
+tomcat6Server.ognl.deploymentPath=D\:\\apache-tomcat-6.0.36\\webapps\\ognl
+tomcat6Server.ognl.isUptoDate=true

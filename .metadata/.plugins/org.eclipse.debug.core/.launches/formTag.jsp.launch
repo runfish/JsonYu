@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.genuitec.javascript.debug.launchConfigurationType">
+<stringAttribute key="org.eclipse.atf.config.appPath" value="WebRoot/formTag.jsp"/>
+<booleanAttribute key="org.eclipse.atf.config.isinternalbrowser" value="true"/>
+<booleanAttribute key="org.eclipse.atf.config.isurl" value="false"/>
+<stringAttribute key="org.eclipse.atf.config.project" value="ognl"/>
+<stringAttribute key="org.eclipse.atf.config.webmodule" value="ognl"/>
+<booleanAttribute key="org.eclipse.atf.mozilla.ide.debugoverride_preferences" value="false"/>
+<stringAttribute key="org.eclipse.atf.ui.config.fullPath" value="ognl/WebRoot/formTag.jsp"/>
+<booleanAttribute key="org.eclipse.atf.ui.config.useseverconfig" value="false"/>
+<stringAttribute key="org.eclipse.atf.ui.debug.browserexec" value=""/>
+<stringAttribute key="org.eclipse.atf.ui.debug.processType" value="JavaScript Application"/>
+<stringAttribute key="org.eclipse.debug.ui.ATTR_CONSOLE_ENCODING" value="UTF-8"/>
+</launchConfiguration>

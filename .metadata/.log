@@ -3531,3 +3531,675 @@ SQL Exception: Failed to start database 'aptanaDB', see the next exception for d
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
 	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2190)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2013-04-06 15:56:30.124 -----------------------------------------------
+eclipse.buildId=M20080221-1800
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -clean
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.755
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.adobe.spry.1.6_1.6.0.00003.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.756
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.editor.css_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.756
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.editor.html_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.757
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.editor.js_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.758
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.editors_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.759
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.framework.jaxer_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.764
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.frameworks_1.1.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.765
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.professional_1.2.7.024688_200905101214.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.766
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.rcp_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.767
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.server.cloud_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.768
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.svn_1.4.2.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.768
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.syncing.ftp_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.769
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature.xul_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.769
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.aptana.ide.feature_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.770
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.extjs.ext.2.2_2.2.0.0004.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.770
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.jquery.1.3_1.3.2.00002.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.784
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.mochikit.1.4_1.4.0.00006.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.785
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.ms.ajax.3.5_3.5.21022.9.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.785
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\com.yahoo.yui.2.7_2.7.0.00001.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.786
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\net.mootools.1.2_1.2.1.00001.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.787
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\org.aflax.1.0_1.0.0.00004.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.787
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\org.dojotoolkit.dojo.1.2_1.2.0.00001.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.788
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\org.eclipse.eclipsemonkey_1.2.7.024747.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.788
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\org.openrico.rico.2.0_2.0.0.00002.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.789
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\org.prototypejs.prototype.1.6_1.6.0.00003.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:32.789
+!MESSAGE Unable to find feature.xml in directory: E:\pluginnew\aptana_update_024747\eclipse\features\org.scriptaculous.1.8_1.8.1.00001.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:33.380
+!MESSAGE Unable to find feature.xml in directory: C:\Program Files\MyEclipse 6.5\myeclipse\eclipse\features\net.sf.jadclipse_3.3.0.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:41.115
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/com.ibm.icu_3.6.1.v20070906.jar   Bundle "com.ibm.icu" version "3.6.1.v20070906" has already been installed from: update@plugins/com.ibm.icu_3.6.1.v20070906.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:41.239
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet.jsp_2.0.0.v200706191603.jar   Bundle "javax.servlet.jsp" version "2.0.0.v200706191603" has already been installed from: update@plugins/javax.servlet.jsp_2.0.0.v200706191603.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:41.244
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/javax.servlet_2.4.0.v200706111738.jar   Bundle "javax.servlet" version "2.4.0.v200706111738" has already been installed from: update@plugins/javax.servlet_2.4.0.v200706111738.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:41.260
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/net.sf.jadclipse_3.3.0.jar   Bundle "net.sf.jadclipse" version "3.3.0" has already been installed from: update@plugins/net.sf.jadclipse_3.3.0.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:41.311
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.apache.commons.el_1.0.0.v200706111724.jar   Bundle "org.apache.commons.el" version "1.0.0.v200706111724" has already been installed from: update@plugins/org.apache.commons.el_1.0.0.v200706111724.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:41.819
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.mozilla.xpcom_1.8.1.3-20070320/   Bundle "org.mozilla.xpcom" version "1.8.1.3-20070320" has already been installed from: update@E:/pluginnew/aptana_update_024747/eclipse/plugins/org.mozilla.xpcom_1.8.1.3-20070320.jar
+
+!ENTRY org.eclipse.update.configurator 2013-04-06 15:56:41.821
+!MESSAGE Could not install bundle ../myeclipse/eclipse/plugins/org.mozilla.xulrunner.win32.win32.x86_1.8.1.3-20070404/   Bundle "org.mozilla.xulrunner.win32.win32.x86" version "1.8.1.3-20070404" has already been installed from: update@E:/pluginnew/aptana_update_024747/eclipse/plugins/org.mozilla.xulrunner.win32.win32.x86_1.8.1.3-20070404.jar
+
+!ENTRY org.eclipse.ui 2 0 2013-04-06 15:56:45.057
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-04-06 15:56:45.058
+!MESSAGE Cannot bind to an undefined command: plug-in='com.aptana.ide.editors', id='org.eclipse.ui.edit.text.openExternalFile'
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:56:49.149
+!MESSAGE Plugin com.genuitec.eclipse.fileview, extension org.eclipse.ui.decorators
+Duplicate id found: com.aptana.ide.syncing.SyncConnectionDecorator
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:56:49.149
+!MESSAGE Plugin com.genuitec.eclipse.fileview, extension org.eclipse.ui.decorators
+Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:56:49.150
+!MESSAGE Plugin com.genuitec.eclipse.fileview, extension org.eclipse.ui.decorators
+Duplicate id found: com.aptana.ide.syncing.VirtualFileCloakedDecorator
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:56:49.151
+!MESSAGE Plugin com.genuitec.eclipse.fileview, extension org.eclipse.ui.decorators
+Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:56:49.152
+!MESSAGE Plugin com.genuitec.eclipse.fileview, extension org.eclipse.ui.decorators
+Duplicate id found: com.aptana.ide.syncing.VirtualFileManagerSyncDecorator
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:56:49.152
+!MESSAGE Plugin com.genuitec.eclipse.fileview, extension org.eclipse.ui.decorators
+Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:56:49.153
+!MESSAGE Plugin com.genuitec.eclipse.fileview, extension org.eclipse.ui.decorators
+Duplicate id found: com.aptana.ide.syncing.SyncProjectConnectionDecorator
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:56:49.153
+!MESSAGE Plugin com.genuitec.eclipse.fileview, extension org.eclipse.ui.decorators
+Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:56:49.154
+!MESSAGE Plugin com.genuitec.eclipse.fileview, extension org.eclipse.ui.decorators
+Duplicate id found: com.aptana.ide.syncing.VirtualProjectCloakedDecorator
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:56:49.155
+!MESSAGE Plugin com.genuitec.eclipse.fileview, extension org.eclipse.ui.decorators
+Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-06 15:56:50.620
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-06 15:56:50.620
+!MESSAGE Conflict for 'AUTOGEN:::com.aptana.ide.core.ui.objectContribution1/com.aptana.ide.core.ui.action1':
+HandlerActivation(commandId=AUTOGEN:::com.aptana.ide.core.ui.objectContribution1/com.aptana.ide.core.ui.action1,
+	handler=ActionDelegateHandlerProxy(null,com.aptana.ide.core.ui.io.file.DuplicateVirtualFileManagerAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c74910),sourcePriority=16384)
+HandlerActivation(commandId=AUTOGEN:::com.aptana.ide.core.ui.objectContribution1/com.aptana.ide.core.ui.action1,
+	handler=ActionDelegateHandlerProxy(null,com.aptana.ide.core.ui.io.file.DuplicateVirtualFileManagerAction),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c74910),sourcePriority=16384)
+
+!ENTRY org.eclipse.ui 4 0 2013-04-06 15:57:11.782
+!MESSAGE Unable to create editor ID com.aptana.ide.server.portal.ui.MyAptanaEditor: An unexpected exception was thrown.
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.ide.xul.FirefoxBrowser.createControl(FirefoxBrowser.java:314)
+	at com.aptana.ide.server.portal.ui.MyAptanaEditor.createPartControl(MyAptanaEditor.java:261)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:661)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:426)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:592)
+	at org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:263)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2739)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2651)
+	at org.eclipse.ui.internal.WorkbenchPage.access$13(WorkbenchPage.java:2643)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2595)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2590)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2574)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2565)
+	at com.aptana.ide.server.portal.ui.MyAptanaEditor.open(MyAptanaEditor.java:112)
+	at com.aptana.ide.intro.actions.StartPortalAction.openPortalEditor(StartPortalAction.java:82)
+	at com.aptana.ide.intro.IntroStartup$1.runInUIThread(IntroStartup.java:162)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:94)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:129)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3659)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3296)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2013-04-06 15:57:13.942
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.ide.trialkey.TrialKey.fetchTrialLicense(TrialKey.java:72)
+	at com.aptana.ide.intro.licensing.TrialKeyStartup.getTrialKey(TrialKeyStartup.java:120)
+	at com.aptana.ide.intro.licensing.TrialKeyStartup.earlyStartup(TrialKeyStartup.java:75)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 4 2013-04-06 15:57:13.943
+!MESSAGE Unhandled Exception
+
+!ENTRY com.aptana.ide.intro 4 0 2013-04-06 15:57:13.945
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.ide.trialkey.TrialKey.fetchTrialLicense(TrialKey.java:72)
+	at com.aptana.ide.intro.licensing.TrialKeyStartup.getTrialKey(TrialKeyStartup.java:120)
+	at com.aptana.ide.intro.licensing.TrialKeyStartup.earlyStartup(TrialKeyStartup.java:75)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.aptana.ide.core 4 0 2013-04-06 15:57:21.522
+!MESSAGE (Build 1.2.7.024747) [ERROR] Unable to connect to database
+!STACK 0
+SQL Exception: Failed to start database 'aptanaDB', see the next exception for details.
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver30.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.aptana.ide.core.db.AptanaDB.getConnection(AptanaDB.java:225)
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.checkTable(PortalProxyServlet.java:362)
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.initCache(PortalProxyServlet.java:328)
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.<init>(PortalProxyServlet.java:105)
+	at com.aptana.ide.server.portal.server.MyAptanaServer.start(MyAptanaServer.java:153)
+	at com.aptana.ide.server.portal.server.MyAptanaServer.getServer(MyAptanaServer.java:213)
+	at com.aptana.ide.server.portal.ui.MyAptanaEditor$2.run(MyAptanaEditor.java:190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.aptana.ide.server.jetty 4 0 2013-04-06 15:57:21.523
+!MESSAGE (Build 1.2.7.024747) [ERROR] Connection to AptanaDB is null.
+
+!ENTRY com.aptana.ide.server.portal 4 0 2013-04-06 15:57:21.525
+!MESSAGE (Build 1.2.7.024747) [ERROR] Error starting the server for My Aptana page
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.checkTable(PortalProxyServlet.java:380)
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.initCache(PortalProxyServlet.java:328)
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.<init>(PortalProxyServlet.java:105)
+	at com.aptana.ide.server.portal.server.MyAptanaServer.start(MyAptanaServer.java:153)
+	at com.aptana.ide.server.portal.server.MyAptanaServer.getServer(MyAptanaServer.java:213)
+	at com.aptana.ide.server.portal.ui.MyAptanaEditor$2.run(MyAptanaEditor.java:190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2013-04-06 15:57:21.547
+!MESSAGE While loading class "com.aptana.ide.server.cloud.CloudPlugin$5$1", thread "Thread[main,6,main]" timed out waiting (5000ms) for thread "Thread[Worker-3,5,main]" to finish starting bundle "update@E:/pluginnew/aptana_update_024747/eclipse/plugins/com.aptana.ide.server.cloud_1.2.7.024747.jar [46]". To avoid deadlock, thread "Thread[main,6,main]" is proceeding but "com.aptana.ide.server.cloud.CloudPlugin$5$1" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "update@E:/pluginnew/aptana_update_024747/eclipse/plugins/com.aptana.ide.server.cloud_1.2.7.024747.jar" by thread "Worker-3".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1141)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:258)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:400)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClassInternal(BundleLoader.java:408)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:369)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:357)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at com.aptana.ide.server.cloud.CloudPlugin$5.runInUIThread(CloudPlugin.java:314)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:94)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:129)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3659)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3296)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 40 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1141)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:258)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:400)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClassInternal(BundleLoader.java:408)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:369)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:357)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at com.aptana.ide.server.cloud.CloudPlugin$5.runInUIThread(CloudPlugin.java:314)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:94)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:129)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3659)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3296)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+
+!ENTRY com.aptana.ide.core 4 0 2013-04-06 15:57:21.692
+!MESSAGE (Build 1.2.7.024747) [ERROR] Unable to connect to database
+!STACK 0
+SQL Exception: Failed to start database 'aptanaDB', see the next exception for details.
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver30.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.aptana.ide.core.db.AptanaDB.getConnection(AptanaDB.java:225)
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.checkTable(PortalProxyServlet.java:362)
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.initCache(PortalProxyServlet.java:328)
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.<init>(PortalProxyServlet.java:105)
+	at com.aptana.ide.server.portal.server.MyAptanaServer.start(MyAptanaServer.java:153)
+	at com.aptana.ide.server.portal.server.MyAptanaServer.restart(MyAptanaServer.java:257)
+	at com.aptana.ide.server.portal.ui.MyAptanaEditor$2.run(MyAptanaEditor.java:190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.aptana.ide.server.jetty 4 0 2013-04-06 15:57:21.692
+!MESSAGE (Build 1.2.7.024747) [ERROR] Connection to AptanaDB is null.
+
+!ENTRY com.aptana.ide.server.portal 4 0 2013-04-06 15:57:21.693
+!MESSAGE (Build 1.2.7.024747) [ERROR] Error starting the server for My Aptana page
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.checkTable(PortalProxyServlet.java:380)
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.initCache(PortalProxyServlet.java:328)
+	at com.aptana.ide.server.jetty.portal.PortalProxyServlet.<init>(PortalProxyServlet.java:105)
+	at com.aptana.ide.server.portal.server.MyAptanaServer.start(MyAptanaServer.java:153)
+	at com.aptana.ide.server.portal.server.MyAptanaServer.restart(MyAptanaServer.java:257)
+	at com.aptana.ide.server.portal.ui.MyAptanaEditor$2.run(MyAptanaEditor.java:190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.aptana.ide.core 4 0 2013-04-06 15:57:21.892
+!MESSAGE (Build 1.2.7.024747) [ERROR] Unable to connect to database
+!STACK 0
+SQL Exception: Failed to start database 'aptanaDB', see the next exception for details.
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver30.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.aptana.ide.core.db.AptanaDB.getConnection(AptanaDB.java:225)
+	at com.aptana.ide.core.db.EventLogger.tableExists(EventLogger.java:290)
+	at com.aptana.ide.core.db.EventLogger.getInstance(EventLogger.java:89)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.getPreviewString(SchedulerStartup.java:544)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.updateAnonymousId(SchedulerStartup.java:299)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.startSearch(SchedulerStartup.java:229)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.scheduleUpdateJob(SchedulerStartup.java:167)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.earlyStartup(SchedulerStartup.java:131)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.aptana.ide.core.ui 4 0 2013-04-06 15:57:21.892
+!MESSAGE (Build 1.2.7.024747) [ERROR] Unable to contact update server
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.ide.core.db.EventLogger.tableExists(EventLogger.java:291)
+	at com.aptana.ide.core.db.EventLogger.getInstance(EventLogger.java:89)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.getPreviewString(SchedulerStartup.java:544)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.updateAnonymousId(SchedulerStartup.java:299)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.startSearch(SchedulerStartup.java:229)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.scheduleUpdateJob(SchedulerStartup.java:167)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.earlyStartup(SchedulerStartup.java:131)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.aptana.ide.core 4 0 2013-04-06 15:57:21.900
+!MESSAGE (Build 1.2.7.024747) [ERROR] Unable to connect to database
+!STACK 0
+SQL Exception: Failed to start database 'aptanaDB', see the next exception for details.
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver30.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.aptana.ide.core.db.AptanaDB.getConnection(AptanaDB.java:225)
+	at com.aptana.ide.core.db.AptanaDB.execute(AptanaDB.java:97)
+	at com.aptana.ide.core.db.EventLogger.clearEvents(EventLogger.java:190)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.updateAnonymousId(SchedulerStartup.java:421)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.startSearch(SchedulerStartup.java:229)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.scheduleUpdateJob(SchedulerStartup.java:167)
+	at com.aptana.ide.core.ui.update.SchedulerStartup.earlyStartup(SchedulerStartup.java:131)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-04-06 15:58:37.200
+!MESSAGE Unable to update index for central http://repo1.maven.org/maven2/
+!STACK 0
+java.io.IOException: Resource nexus-maven-repository-index.zip does not exist
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadResource(DefaultIndexUpdater.java:222)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$1.invoke(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.run(DefaultIndexUpdater.java:156)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:50)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.fetchAndUpdateIndex(NexusIndexManager.java:443)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob$UpdateCommand.run(IndexUpdaterJob.java:111)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.expressions 4 201 2013-04-06 15:58:46.249
+!MESSAGE No property tester contributes a property nature to type class org.eclipse.jdt.internal.core.JavaProject
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property nature to type class org.eclipse.jdt.internal.core.JavaProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:109)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:95)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:257)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:208)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.contribute(PropertyPageContributorManager.java:143)
+	at org.eclipse.ui.internal.dialogs.PropertyDialog.createDialogOn(PropertyDialog.java:60)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.createDialog(PropertyDialogAction.java:175)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.run(PropertyDialogAction.java:154)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2013-04-06 15:58:46.250
+!MESSAGE No property tester contributes a property nature to type class org.eclipse.jdt.internal.core.JavaProject
+
+!ENTRY com.aptana.ide.intro 4 0 2013-04-06 16:00:17.959
+!MESSAGE (Build 1.2.7.024747) [ERROR] Error loading messages due to socket timeout.  Please confirm that the siteURL is live and not password protected.
+!STACK 0
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at com.aptana.ide.intro.messaging.MessagesReader.loadMessages(MessagesReader.java:164)
+	at com.aptana.ide.intro.messaging.MessagingManager.loadRemoteMessages(MessagingManager.java:251)
+	at com.aptana.ide.intro.messaging.MessagingManager$5.run(MessagingManager.java:502)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.expressions 4 201 2013-04-06 16:01:51.887
+!MESSAGE No property tester contributes a property nature to type class org.eclipse.jdt.internal.core.JavaProject
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property nature to type class org.eclipse.jdt.internal.core.JavaProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:109)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:95)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:257)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:208)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.contribute(PropertyPageContributorManager.java:143)
+	at org.eclipse.ui.internal.dialogs.PropertyDialog.createDialogOn(PropertyDialog.java:60)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.createDialog(PropertyDialogAction.java:175)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.run(PropertyDialogAction.java:154)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1148)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2013-04-06 16:01:51.888
+!MESSAGE No property tester contributes a property nature to type class org.eclipse.jdt.internal.core.JavaProject
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.243
+!MESSAGE NLS missing message: JavaMetaUtils_warning_default_package in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.266
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_doesnt_exist_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.266
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_doesnt_exist_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.267
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_not_jre_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.268
+!MESSAGE NLS missing message: JavaVMUtility_dialog_jdk_not_jre_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.268
+!MESSAGE NLS missing message: JavaVMUtility_launchconfig_default_server_type_id_attr in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.269
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_browse_jar_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.270
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_invalidfile_message in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.270
+!MESSAGE NLS missing message: MELibraryFieldEditor_dialog_invalidfile_title in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.271
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_add_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.272
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_down_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.272
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_edit_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.273
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_remove_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.274
+!MESSAGE NLS missing message: MELibraryFieldEditor_button_up_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.274
+!MESSAGE NLS missing message: MELibraryWizardPage_description in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.275
+!MESSAGE NLS missing message: MELibraryWizardPage_error_selection_onlyone in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.275
+!MESSAGE NLS missing message: MELibraryWizardPage_error_selection_zero in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.276
+!MESSAGE NLS missing message: MELibraryWizardPage_list_library_selector_label in: com.genuitec.eclipse.core.platformmessages
+
+!ENTRY org.eclipse.osgi 2 1 2013-04-06 16:08:45.277
+!MESSAGE NLS missing message: MELibraryWizardPage_title in: com.genuitec.eclipse.core.platformmessages

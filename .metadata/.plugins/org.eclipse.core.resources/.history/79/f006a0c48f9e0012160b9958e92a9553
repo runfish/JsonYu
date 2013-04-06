@@ -25,7 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  <pre>
  1:表单标签
  
- 2; 文本框标签<s:textfield name="username"></s:textfield>
+ 2; 文本框标签<s:textfield name="username" value=""></s:textfield>
  
  
  </pre>
