@@ -15,8 +15,8 @@
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
 	</section>
 	<section name="PreferencesExportWizard">
-		<item key="WizardPreferencesExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID" value="false"/>
 		<item key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID" value="true"/>
+		<item key="WizardPreferencesExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID" value="false"/>
 		<item key="" value="F:\test.epf"/>
 		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
 			<item value="F:\test.epf"/>

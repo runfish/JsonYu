@@ -1,0 +1,25 @@
+package com.xiaoyu.test;
+
+public class InnerClassdemo2 {
+	
+	public static void main(String[] args) {
+		
+		Outer.Inner inner = new Outer().new Inner();
+		inner.show();
+	}
+
+}
+
+class Outer{
+	
+	int num=3;
+	
+	class Inner{
+		int num = 4;
+		
+		void show(){
+			int num = 5;
+			System.out.println(num);
+		}
+	}
+}

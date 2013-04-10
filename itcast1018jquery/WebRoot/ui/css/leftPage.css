@@ -1,0 +1,36 @@
+.buttom_line {
+	border-style:none none solid none ;
+	border-color:#D8DBE0;
+	border-width:1px;
+}
+.buttom_lr_line {
+	border-style:none solid solid solid ;
+	border-color:#B1B9CA;
+	border-width:1px;
+}
+.unnamed1 {
+	font-size: 12px;
+	line-height: 20px;
+}
+.bgstyle{
+	background-image: url(zcdbj.png);
+}
+.bgstyle1{
+	background-image: url(zcdhgbj.png);
+}
+.fBlack {
+	color:#000000;
+}
+body {
+	margin:0px;
+	background-color:#FBFBFF;
+	scrollbar-base-color:#DCE3EB;
+}
+.bigtable{
+	border-top:1px solid #B1B9CA;
+	margin-left:2px;
+}
+.divfont{
+	font-weight:bold;
+	color:#002E69;
+}

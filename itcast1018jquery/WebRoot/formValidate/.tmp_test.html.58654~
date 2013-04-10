@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>jQuery validation plug-in - main demo</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+        <script type="text/javascript" src="jquery-1.4.2.js"></script>
+        <script type="text/javascript" src="jquery.validate.js"></script>
+        
+<script type="text/javascript">
+	
+	  function a(){
+	  	var str=document.getElementById("sfzh").value;
+	  	var re1 = /^\\d{18}$/;
+		var re2 = /^\\d{15}$/;
+		if(re1.test(str)||re2.test(str)){
+			alert(true);
+			return true;
+		}
+		alert(false);
+		return false;
+	  }
+</script>
+</head>
+<body>
+    <p>员工信息录入</p>
+<form name="empForm" id="empForm" method="post" action="">
+		<table border=1>
+			 <tr>
+               <td align="right">身份证号</td>
+               <td><input name="sfzh" type="text" id="sfzh" value=""   /></td>
+            </tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="submit"  name="firstname"  value="保存"   onclick="a()"></td>
+			</tr>
+		</table>
+</form>
+<script language="JavaScript">
+	
+</script>
+
+</body>
+</html>

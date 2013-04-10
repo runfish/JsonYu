@@ -1,0 +1,27 @@
+package com.xiaoyu.test;
+
+
+
+public class InnerClass {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Outer{
+	
+	private int num = 10;
+	
+	class Inner{
+		void show(){
+			System.out.println("内部类方法...."+num);
+		}
+	}
+	
+	public Inner getInner() {
+		return new Inner();
+		
+	}
+	
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>form.html</title>
+        <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+        <meta http-equiv="description" content="this is my page">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <script language="JavaScript" src="./js/jquery-1.4.2.js">
+        </script>
+    </head>
+    <body>
+        <input type="text" value="zhang" id="username" name="username" />
+    </body>
+    <script language="JavaScript">
+        //  //dom转化为JQUery对象  $(DOM对象)
+        //  
+        //  /*
+        //   * 对于已经是一个DOM对象，只需要用$()把DOM对象包装起来，就可以获得一个jQuery对象了。$(DOM对象) 
+        //   */
+        //  
+        //  //usernameElement是Dom对象
+        //  var usernameElement=document.getElementById("username");
+        //  
+        //  //转化为jquery对象
+        //  var $usernameElement=$(usernameElement);
+        //  
+        //  //获取值
+        //  alert($usernameElement.val());
+        
+        
+        var usernameElement = document.getElementById("username");
+//		alert(usernameElement.value);
+		var $username = $(usernameElement);
+		alert($username.val());
+    </script>
+</html>

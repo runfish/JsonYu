@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>ddd</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script language="JavaScript" src="../js/jquery-1.4.2.js"></script>
+	<style type="text/css">
+		 	div,span{
+			    width: 140px;
+			    height: 140px;
+			    margin: 20px;
+			    background: #9999CC;
+			    border: #000 1px solid;
+				float:left;
+			    font-size: 17px;
+			    font-family:Roman;
+			}
+			
+			div.mini{
+			    width: 30px;
+			    height: 30px;
+			    background: #CC66FF;
+			    border: #000 1px solid;
+			    font-size: 12px;
+			    font-family:Roman;
+			}
+			
+			div.visible{
+				display:none;
+			}
+	 </style>
+	 <!--引入jquery的js库-->
+	</head>
+	<body>
+		 <input type="button" value="保存"  class="mini" name="ok"  class="mini" />
+		 <input type="button" value=" 改变所有可见的div元素的背景色为 #0000FF"  id="b1"/>
+		 <input type="button" value=" 选取所有不可见的元素, 利用 jQuery 中的 show() 方法将它们显示出来, 并设置其背景色为 #0000FF"  id="b2"/>
+		 <input type="button" value=" 选取所有的文本隐藏域, 并打印它们的值"  id="b3"/>
+		 <input type="button" value=" 选取所有的文本隐藏域, 并打印它们的值"  id="b4"/>
+		 
+		 <!--文本隐藏域-->
+         <input type="hidden" value="hidden_1">
+		 <input type="hidden" value="hidden_2">
+		 <input type="hidden" value="hidden_3">
+		 <input type="hidden" value="hidden_4">
+		 
+		 <h1>天气冷了</h1>
+		 <h2>天气又冷了</h2>
+		 
+	     <div id="one">
+	    	 id为one   div
+		     
+		 </div>
+		
+		 <div id="two" class="mini" >
+	    	   id为two   class是 mini  div
+		       <div  class="mini" >class是 mini</div>
+		</div>
+		
+		 <div class="visible" >
+		 	    class是 one 
+		       <div  class="mini" >class是 mini</div>
+			   <div  class="mini" >class是 mini</div>
+		 </div>
+		 <div class="one" >
+		 	  class是 one 
+		       <div  class="mini01" >class是 mini01</div>
+			   <div  class="mini" >class是 mini</div>
+		</div>
+		
+		<div class="visible" >
+		 	  这是隐藏的xx
+		</div>
+		
+		<div class="one">
+			
+		</div>
+		<br>
+		<div id="mover" >
+		 	  动画
+		</div>
+		<br>
+		
+		
+	</body>
+<script language="JavaScript">
+//<input type="button" value=" 改变所有可见的div元素的背景色为 #0000FF"  id="b1"/>
+ $("#b1").click(function(){
+ 	$("div:visible").css("background","red");
+ });
+
+//<input type="button" value=" 选取所有不可见的元素, 利用 jQuery 中的 show() 方法将它们显示出来, 并设置其背景色为 #0000FF"  id="b2"/>
+ $("#b2").click(function(){
+ 	$("div:hidden").show().css("background","red");
+ });
+
+//<input type="button" value=" 选取所有的文本隐藏域, 并打印它们的值"  id="b3"/>
+//方法一
+ $("#b3").click(function(){
+ 	/*
+ 	 *   <input type="hidden" value="hidden_1">
+		 <input type="hidden" value="hidden_2">
+		 <input type="hidden" value="hidden_3">
+		 <input type="hidden" value="hidden_4">
+ 	 */
+	
+    var $hids=$("input:hidden")
+	//alert($hids.length);
+	
+	/*
+	 * $hids.each(function(index,domEle){});
+	 *   * 以每一个匹配的元素作为上下文来执行一个函数
+	 *   * $hids:要遍历的集合
+	 *   * function(index,domEle){},回调函数
+	 *      * index:每次要遍历的索引值
+	 *      * domEle:每次遍历的对象,Dom对象
+	 */
+	$hids.each(function(index,domEle){
+		//alert(index);
+		//alert(domEle.value);
+		//alert($(domEle).val());
+		 alert(this.value);
+		 //alert($(this).val());
+	});
+ });
+ 
+//<input type="button" value=" 选取所有的文本隐藏域, 并打印它们的值"  id="b4"/>
+//方法二
+ $("#b4").click(function(){
+ 	/*
+ 	 *   <input type="hidden" value="hidden_1">
+		 <input type="hidden" value="hidden_2">
+		 <input type="hidden" value="hidden_3">
+		 <input type="hidden" value="hidden_4">
+ 	 */
+	var $hids=$("input:hidden");
+	/*
+	 * jQuery.each(object, [callback])  通用例遍方法，可用于例遍对象和数组
+	 *   * 这种形式表示是jquery中的全局函数,使用时,直接用$.函数名调用
+	 * $.each($hids,function(index,domEle){});
+	 *   * 参数1: $hids:要遍历的集合
+	 *   * 参数2:  function(index,domEle){},回调函数
+	 *               * index:每次要遍历的索引值
+	 *               * domEle:每次遍历的对象,Dom对象
+	 */
+	$.each($hids,function(index,domEle){
+		//alert(index);
+		//alert(domEle.value);
+		//alert($(domEle).val());
+		alert(this.value);
+		alert($(this).val());
+	});
+ });
+</script>
+   
+</html>
+
+
+

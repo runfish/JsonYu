@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Untitled Document</title>
+		<script type="text/javascript" src="../js/jquery-1.3.2.js"></script>
+	</head>
+	<body>
+		<input type="button" value="‰ΩøÂçïÈÄâ‰∏ãÊãâÊ°ÜÁö?2Âè?Ë¢´È?‰∏?/><br>
+		<input type="button" value="‰ΩøÂ§öÈÄâ‰∏ãÊãâÊ°ÜÈÄâ‰∏≠Áö?2Âè?Âí?5Âè?Ë¢´È?‰∏?/><br>
+		<input type="button" value="‰ΩøÂ§çÈÄâÊ°ÜÁö?Â§çÈ?2'Âí?Â§çÈ?4'Ë¢´È?‰∏?/><br>
+		<input type="button" value="‰ΩøÂçïÈÄâÊ°ÜÁö?ÂçïÈ?2'Ë¢´È?‰∏?/><br>
+		<input type="button" value="ÊâìÂç∞Â∑≤ÁªèË¢´È?‰∏≠ÁöÑÂÄ?><br>
+		<br/>
+		
+		<select id="one">
+		  <option>1Âè?/option>
+		  <option>2Âè?/option>
+		  <option>3Âè?/option>
+		</select>
+		
+		<select id="many" multiple="multiple" style="height:120px;">
+		  <option selected="selected">1Âè?/option>
+		  <option>2Âè?/option>
+		  <option>3Âè?/option>
+		  <option>4Âè?/option>
+		  <option>5Âè?/option>
+		  <option selected="selected">6Âè?/option>
+		</select>
+		
+		<br/>
+		<br/>
+
+		<input type="checkbox" name="c" value="check1"/> Â§çÈ?1
+		<input type="checkbox" name="c" value="check2"/> Â§çÈ?2
+		<input type="checkbox" name="c" value="check3"/> Â§çÈ?3
+		<input type="checkbox" name="c" value="check4"/> Â§çÈ?4
+		<br/>
+		<input type="radio" name="r" value="radio1"/> ÂçïÈ?1
+		<input type="radio" name="r"  value="radio2"/> ÂçïÈ?2
+		<input type="radio" name="r"  value="radio3"/> ÂçïÈ?3
+	</body>
+	 <script language="JavaScript">
+      //<input type="button" value="‰ΩøÂçïÈÄâ‰∏ãÊãâÊ°ÜÁö?2Âè?Ë¢´È?‰∏?/><br>
+	  $("input:eq(0)").click(function(){
+		$("#one").val(['2Âè?]);
+	  });
+
+	//<input type="button" value="‰ΩøÂ§öÈÄâ‰∏ãÊãâÊ°ÜÈÄâ‰∏≠Áö?2Âè?Âí?5Âè?Ë¢´È?‰∏?/><br>
+	 $("input:eq(1)").click(function(){
+		$("#many").val(['2Âè?,'5Âè?]);
+	  });
+
+	//<input type="button" value="‰ΩøÂ§çÈÄâÊ°ÜÁö?Â§çÈ?2'Âí?Â§çÈ?4'Ë¢´È?‰∏?/><br>
+	//<input type="checkbox" name="c" value="check1"/> Â§çÈ?1
+	 $("input:eq(2)").click(function(){
+		$("input[name=c]").val(['check2','check4']);
+	 });
+	
+	//<input type="button" value="‰ΩøÂçïÈÄâÊ°ÜÁö?ÂçïÈ?2'Ë¢´È?‰∏?/><br>
+	//<input type="radio" name="r"  value="radio2"/> ÂçïÈ?2
+	 $("input:eq(3)").click(function(){
+		$("input[type=radio]").val(['radio2']);
+	 });
+
+	//<input type="button" value="ÊâìÂç∞Â∑≤ÁªèË¢´È?‰∏≠ÁöÑÂÄ?><br>
+	 
+	 $("input:eq(4)").click(function(){
+		$("input:checked").each(function(index,data){
+			alert($(this).val());
+		});
+        
+		//ÊñπÊ≥ï‰∏?//		$("select > option:selected").each(function(index,data){
+//			alert($(this).text());
+//		});
+        
+		//ÊñπÊ≥ï‰∫?//        $.each($("select > option:selected"),function(index,data){
+//			alert($(this).text());
+//		});
+
+		
+	 });
+	
+	
+	
+	
+	
+	
+	 </script>
+	 
+	 
+	 
+</html>

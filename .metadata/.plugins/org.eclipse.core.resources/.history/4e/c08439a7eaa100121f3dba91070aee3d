@@ -1,0 +1,18 @@
+package com.xiaoyu.test;
+
+public class InnerClassDemo3 {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+class Outer3{
+	
+	class Inner{
+		
+	}
+	
+	
+}

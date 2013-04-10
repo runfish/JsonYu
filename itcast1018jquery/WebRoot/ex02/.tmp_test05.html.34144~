@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>XXX</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script language="JavaScript" src="../js/jquery-1.3.1.js"></script>
+	<style type="text/css">
+		 	div,span{
+			    width: 140px;
+			    height: 140px;
+			    margin: 20px;
+			    background: #9999CC;
+			    border: #000 1px solid;
+				float:left;
+			    font-size: 17px;
+			    font-family:Roman;
+			}
+			
+			div.mini{
+			    width: 30px;
+			    height: 30px;
+			    background: #CC66FF;
+			    border: #000 1px solid;
+			    font-size: 12px;
+			    font-family:Roman;
+			}
+	 </style>
+	 <!--引入jquery的js库-->
+	</head>
+	<body>
+		 <input type="text" value="用户邮箱/手机号/用户名"  id="b1"/><br>
+		 <input type="password" value=""  id="b2"/><br>
+		 <input type="button" value="登陆"  id="b3"/>
+		
+		 <br>	
+	</body>
+<script language="JavaScript">
+    
+	//<input type="text" value="用户邮箱/手机号/用户名"  id="b1"/><br>
+	//this.defaultValue  默认的初始值
+	$("#b1").focus(function(){
+		//获取文本框当前值
+		var curValue=$(this).val();
+		if(curValue==this.defaultValue){
+			//设置文本框的值
+			$(this).val("");
+		}
+	});
+	
+	
+	$("#b1").blur(function(){
+		//获取当前值
+		var curVlaue=$(this).val();
+		//trim()去掉字符串起始和结尾的空格。
+
+		//当前值为空,设置文本框的值为默认值
+		if($.trim(curVlaue)==""){
+			$(this).val(this.defaultValue);
+		}
+	});
+	
+</script>
+   
+</html>
+
+
+

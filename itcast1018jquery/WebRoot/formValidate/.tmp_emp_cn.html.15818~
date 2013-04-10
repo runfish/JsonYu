@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>jQuery validation plug-in - main demo</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+        <script type="text/javascript" src="jquery-1.4.2.js"></script>
+        <script type="text/javascript" src="jquery.validate.js"></script>
+        
+<script type="text/javascript">
+	$.validator.setDefaults({
+	submitHandler:function(form) {
+		    $(form).ajaxSubmit();
+     }
+ });
+	
+	$().ready(function(){
+	
+		/*
+		 * 自定义验证方法
+		 * function(value, element, param)
+		 *   *  value是指当前校验域的值
+	     *   *  element是指当前检验的域
+	     *   *  param是指在rules中设定的参数
+	     *   *这三个参数会在进行校验时由系统自动带入
+	     *   addMethod("desValidate",function(value, element, param)
+	     *    * 添加的验证方法的名子
+	     *    * 是一个函数,这个比较重要,决定了用这个验证方法时的写法
+		 */
+		$.validator.addMethod("desValidate",function(value, element, param){
+			if(value==""){
+				return false;
+			}
+			return true;
+			
+		});
+		
+		
+		
+	
+		$("#empForm").validate({
+		    //自定义验证规则,通过name属性设置值
+			rules: {
+				//真实姓名的验证规则
+				realname:"required",
+				//登录的用户名
+				username:{
+					required:true,
+					minlength:5,
+					maxlength:8
+				},
+				psw:{
+					required:true,
+					minlength:5,
+					maxlength:8
+				},
+				psw2:{
+					required:true,
+					equalTo:"#psw"
+				},
+				//性别
+				gender:"required",
+				//年龄
+				age:{
+					required:true,
+					number:true,
+					digits:true,
+					range:[26,50]
+				},
+				edu:"required",
+				birthday:{
+					required:true,
+					date:true
+					
+				},
+				checkbox1:{
+					required:true
+				},
+				email:{
+					required:true,
+					email:true
+				},
+				des:{
+					required:true,
+					desValidate:"1"
+				}
+			},
+			//自定义提示信息
+			messages: {
+				realname:"请输入真实姓名",
+				username:{
+					    required:"您的登录名不能为空",
+						minlength:"您最少长度不能少于5个字符",
+						maxlength:"您的最大长度不能超多8个字符"
+					},
+				age:"年龄字段不能为空,应该在20-56之间",
+				edu:"你是不是忘记选择学历了",
+				birthday:"日期必须在\"1900-01-01\"和\"2000-01-01\"之间",
+				checkbox1:"您的兴趣爱好,至少选择一个",
+				email:"您的电子邮箱的格式不正确",
+				
+				des:"不能为空",
+				
+				psw:"密码不能为空,密码应该在5-8位之间",
+				psw2:"两次输入的密码不一致"
+			}
+		 });
+	});
+</script>
+
+</head>
+<body>
+    <p>员工信息录入</p>
+<form name="empForm" id="empForm" method="post" action="">
+		<table border=1>
+			<tr>
+				<td>真实姓名(不能为空)</td>
+				<td><input type="text" id="realname" name="realname" />
+				<!--<label  style="display: none" for="realname" class="error">dddddddddddddddddddd</label>-->
+				</td>
+			</tr>
+			<tr>
+				<td>登录名(登录名不能为空,长度应该在5-8之间):</td>
+				<td><input type="text" id="username" name="username" /></td>
+			</tr>
+			
+			 <tr> 
+		      <td align="right">密码:</td>
+		      <td><input type="password" id="psw"  name="psw" style="width:120px" /></td>
+		    </tr>
+		    <tr> 
+		      <td align="right">重复密码:</td>
+		      <td><input type="password" id="psw2" name="psw2" style="width:120px" /></td>
+		    </tr>
+			
+			<!--
+			    比较特殊
+				    	 errorClass: "error",
+		                 errorElement: "label",
+				
+			        label = $("<" + this.settings.errorElement + "/>")
+					.attr({"for":  this.idOrName(element), generated: true})
+					.addClass(this.settings.errorClass)
+					.html(message || "");
+					
+					底层代码执行的时候,先通过for查找该标签,在设置其样式和值,如没有在创建
+					例如:label  style="display: none" for="gender" class="error"
+			
+			-->
+		    <tr>
+				<td>性别(必选其一)</td>
+				<td>
+				    <input  type="radio" id="gender_male" value="m" name="gender"/>男
+				    <input  type="radio" id="gender_female" value="f" name="gender"/>女
+				    <label  style="display: none" for="gender" class="error">请选择性别</label>
+				</td>
+			</tr>
+			<tr>
+				<td>年龄(必填26-50):</td>
+				<td><input type="text" id="age" name="age" /></td>
+			</tr>
+			
+		    <tr> 
+		      <td>你的学历:</td>
+		      <td> <select name="edu" id="edu">
+			          <option value="">－－请选择你的学历－－</option>
+			          <option value="a">专科</option>
+			          <option value="b">本科</option>
+			          <option value="c">研究生</option>
+			          <option value="e">硕士</option>
+			          <option value="d">博士</option>
+		          </select>
+			  </td>
+		    </tr>
+			
+			<tr> 
+              <td>出生日期(1982/09/21):</td>
+               <td><input type="text" id="birthday"  name="birthday" style="width:120px" value="" /></td>
+            </tr>
+			
+		   <tr> 
+		      <td>兴趣爱好:</td>
+		      <td colspan="2"> 
+			      <input type="checkbox" name="checkbox1" id="qq1"/>乒乓球 
+		          <input type="checkbox" name="checkbox1" id="qq2" value="1" />羽毛球 
+		          <input type="checkbox" name="checkbox1" id="qq3" value="2" />上网 
+		          <input type="checkbox" name="checkbox1" id="qq4" value="3" />旅游 
+		          <input type="checkbox" name="checkbox1" id="qq5" value="4" />购物 
+				  <label  style="display: none" for="checkbox1" class="error">您的兴趣爱好,至少选择一个</label>
+			  </td>
+		    </tr>
+			 <tr> 
+			      <td align="right">电子邮箱:</td>
+			      <td><input type="text" id="email" style="width:120px" name="email" /></td>
+			  </tr>
+			
+			 <tr>
+               <td align="right">test</td>
+               <td><input name="des" type="text" id="des" value="" /></td>
+            </tr>
+			
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="submit"  name="firstname"  value="保存"></td>
+			</tr>
+		</table>
+
+</form>
+<script language="JavaScript">
+	
+</script>
+
+</body>
+</html>

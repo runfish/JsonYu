@@ -1,0 +1,5 @@
+package com.xiaoyu.interceptor;
+
+public class LoginInterceptor {
+
+}

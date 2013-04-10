@@ -1,0 +1,13 @@
+﻿<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<link rel="stylesheet" href="./jquery.datepick.css" type="text/css">
+<script type="text/javascript" src="./jquery.datepick.js"></script>
+<script type="text/javascript" src="./jquery.datepick-zh-CN.js"></script>
+<div>jQuery插件datePicker日期选择器</div>
+
+出生日期:<input type="text" name="time" value="2009-2-9"  class="biuuu" /><br>
+工作日期:<input type="text" name="time" value="2009-2-9"  class="biuuu" /><br>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.biuuu').datepick({dateFormat: 'yy-mm-dd'}); 
+	});
+</script>

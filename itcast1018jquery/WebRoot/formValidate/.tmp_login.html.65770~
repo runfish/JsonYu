@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>jQuery validation plug-in - main demo</title>
+        <script type="text/javascript" src="jquery-1.4.2.js"></script>
+        <script type="text/javascript" src="jquery.validate.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                //当表单提交的时候调用此函数,此函数执行完毕才能提交表单
+                $("#commentForm").validate();
+            });
+        </script>
+    
+    </head>
+    <body>
+        <div id="main">
+            <form class="cmxform" id="commentForm" method="get" action="">
+                    Name (required, at least 2 character)
+                    <input id="username" name="username" class="required" minlength="2" /><br>
+					<input class="submit" type="submit" value="提交"/>
+            </form>
+    </body>
+</html>

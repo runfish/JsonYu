@@ -21,11 +21,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
- <pre>
- 
- <a href="<%=path%>/formAction">测试表单标签</a>
- 
- </pre>
- 
+ <a href="<%=path%>/login.jsp">用户登录</a>
   </body>
 </html>

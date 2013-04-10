@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="itcast1018jquery"
+  id="myeclipse.1318902708937"
+  context-root="/itcast1018jquery"
+  j2ee-spec="5.0"
+  archive="itcast1018jquery.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

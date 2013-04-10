@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Untitled Document</title>
+		<script type="text/javascript" src="../js/jquery-1.3.2.js"></script>
+	</head>
+	<body>
+		<form method="post" action="">
+		   	请选择您的爱好!
+			<br><input type="checkbox" id="checkedAll_2"/>全选/全不选
+		   	<br/>
+		    <input type="checkbox" name="items" value="足球"/>足球
+			<input type="checkbox" name="items" value="篮球"/>篮球
+			<input type="checkbox" name="items" value="游泳"/>游泳
+			<input type="checkbox" name="items" value="唱歌"/>唱歌
+		   	<br/>
+		    <input type="button" id="CheckedAll" value="全　选"/>
+		    <input type="button" id="CheckedNo" value="全不选"/>
+		    <input type="button" id="CheckedRev" value="反　选"/> 
+		
+			<input type="button" id="send" value="提　交"/> 
+		</form>
+	</body>
+	
+	<script language="JavaScript">
+    $(document).ready(function(){
+		//全选
+	   $("#CheckedAll").click(function(){
+	   	  $("input[name=items]").attr("checked","checked");
+	   });
+	   
+	   // 全不选
+	   $("#CheckedNo").click(function(){
+	   	  $("input[name=items]").removeAttr("checked");
+	   });
+	
+	   //反选
+	   $("#CheckedRev").click(function(){
+	   	  $("input[name=items]").each(function(){
+		  	if(this.checked){
+				$(this).removeAttr("checked");
+			}else{
+				$(this).attr("checked","checked");
+			}
+			
+		  });
+	   });
+	 $("#checkedAll_2").click(function(){
+	 	    if(this.checked){ //当前的被选中,所有的都被选中
+				 $("input[name=items]").attr("checked","checked");
+			}else{  //当前的不被选中,所有的都不被选中
+				 $("input[name=items]").removeAttr("checked");
+			}
+	 });
+	
+	
+	//全选/全不选
+	
+	
+    });	
+		
+	
+	</script>
+</html>
