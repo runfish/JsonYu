@@ -1,0 +1,34 @@
+package com.dp.hibernate.test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
+import com.dp.hiberbate.domain.Teacher;
+
+public class TeacherTest1 {
+
+	public static void main(String[] args) {
+		Teacher teacher = new Teacher();
+	//	teacher.setId(2);
+		teacher.setName("lh");
+		teacher.setTitle("教授");
+
+		Configuration cfg = new Configuration();
+
+		SessionFactory sessionFactory = cfg.configure().buildSessionFactory();
+
+		Session session = sessionFactory.openSession();
+ 
+		session.beginTransaction();
+
+		session.save(teacher);
+
+		session.getTransaction().commit();
+
+		session.close();
+
+		sessionFactory.close();
+
+	}
+}

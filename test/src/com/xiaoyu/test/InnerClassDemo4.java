@@ -2,6 +2,8 @@ package com.xiaoyu.test;
 
 public class InnerClassDemo4 {
 	
+	
+
 	public static void main(String[] args) {
 		Outer4 outer4 = new Outer4();
 		
@@ -10,7 +12,11 @@ public class InnerClassDemo4 {
 
 }
 
-class Outer4{
+class Outer4{	
+	{
+		System.out.println("hehe");
+		
+	}
 	int num = 32;
 //	class Inner extends Demo{
 //		

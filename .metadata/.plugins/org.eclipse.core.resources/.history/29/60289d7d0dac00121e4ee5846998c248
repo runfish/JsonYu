@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.dp.hiberbate.domain.Student">
+		<composite-id name="pk" class="com.dp.hiberbate.domain.StudentPK">
+		<key-property name="id"></key-property>
+		<key-property name="name"></key-property>
+		</composite-id>
+		<property name="age" />
+    </class>
+	
+</hibernate-mapping>

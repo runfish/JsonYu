@@ -1,0 +1,83 @@
+package com.dp.action;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.dp.utils.BaseAction;
+import com.dp.utils.JDBCUtils;
+import com.dp.utils.JsonUtil;
+import com.opensymphony.xwork2.ActionContext;
+
+public class DeptACtion extends BaseAction{
+      @Override
+    public String execute() throws Exception {
+    	// TODO Auto-generated method stub
+    	return null;
+    }
+      
+      public String list(){
+    	  Connection conn = null;
+    	  Statement statement = null;
+    	  ResultSet rs = null;
+    	  String sql = null;
+    	  Map<String, Object> deptMap = null;
+    	  List<Map<String, Object>> listMap = new ArrayList<Map<String,Object>>();
+    	  try {
+			conn = JDBCUtils.getConn();
+			statement = conn.createStatement();
+			sql = "select * from t_dept order by dept_id asc";
+			rs = statement.executeQuery(sql);
+			
+			while(rs.next()){
+				deptMap = new HashMap<String, Object>();
+				String dept_id = rs.getString("dept_id");
+				String dept_name = rs.getString("dept_name");
+				String parentid = rs.getString("parentid");
+				int  grade = rs.getInt("grade");
+				int  isleaf = rs.getInt("isleaf");
+				
+				deptMap.put("id", dept_id);
+				deptMap.put("name", dept_name);
+				deptMap.put("pId", parentid);
+				
+				if(grade==1){
+					deptMap.put("open", true);
+				}
+				
+				
+				listMap.add(deptMap);
+				
+			}
+    		  
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally{
+			JDBCUtils.closeConn();
+			JDBCUtils.closeRes(statement, rs);
+		}
+		
+		ActionContext actionContext = ActionContext.getContext();
+		String jsonStr = JsonUtil.objectToJson(listMap);
+		actionContext.put("jsonStr", jsonStr);
+		
+		 
+    	  return "list";
+      }
+      
+      public String list2(){
+    	  
+    	  return "list2";
+      }
+      
+      public String list_sync(){
+ 
+    	  System.out.println("xxxxx");
+    	  
+    	  return this.NONE;
+}

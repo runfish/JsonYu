@@ -1,0 +1,5 @@
+package com.dp.book.domain;
+
+public class Book {
+
+}

@@ -1,0 +1,5 @@
+package com.dp.hiberbate.domain;
+
+public class Teacher {
+
+}

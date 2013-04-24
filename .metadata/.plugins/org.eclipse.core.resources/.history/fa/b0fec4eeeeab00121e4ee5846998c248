@@ -1,0 +1,46 @@
+package com.dp.hibernate.test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.dp.hiberbate.domain.Teacher;
+
+public class StudentTest {
+
+	private static SessionFactory sf = null;
+
+	@BeforeClass
+	public void beforeClass() {
+		sf = new AnnotationConfiguration().configure().buildSessionFactory();
+
+	}
+
+	@Test
+	public void teachersave() {
+		Teacher teacher = new Teacher();
+		teacher.setId(2);
+		teacher.setName("lh");
+		teacher.setTitle("教授");
+
+		Session session = sf.openSession();
+
+		session.beginTransaction();
+
+		session.save(teacher);
+
+		session.getTransaction().commit();
+
+		session.close();
+
+	}
+
+	@AfterClass
+	public void afterClass() {
+		sf.close();
+	}
+
+}

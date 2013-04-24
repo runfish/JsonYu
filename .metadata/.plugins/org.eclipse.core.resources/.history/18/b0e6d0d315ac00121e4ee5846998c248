@@ -1,0 +1,7 @@
+package com.dp.book.daoimpl;
+
+import com.dp.book.dao.BookDao;
+
+public class BookDaoImpl implements BookDao {
+
+}

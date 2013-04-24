@@ -1,0 +1,25 @@
+package com.xiaoyu.thread;
+
+public class Face2 {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+class ShareData{
+	
+	int j=0;
+	
+	public void add(){
+		j++;
+	System.out.println(Thread.currentThread().getName()+j);
+	}
+	
+	private void minus(){
+		j--;
+		System.out.println(Thread.currentThread().getName()+j);
+	}
+	
+	
+}

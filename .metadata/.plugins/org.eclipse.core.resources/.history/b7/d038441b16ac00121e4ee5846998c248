@@ -1,0 +1,7 @@
+package com.dp.book.serviceimpl;
+
+import com.dp.book.service.BookService;
+
+public class BookServiceImpl implements BookService {
+
+}

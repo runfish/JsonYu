@@ -1,0 +1,118 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme() + "://"
++ request.getServerName() + ":" + request.getServerPort()
++ path + "/"; %>
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <base href="<%=basePath%>"><title>My JSP 'listbook.jsp' starting page</title>
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+        <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+        <meta http-equiv="description" content="This is my page">
+        <script type="text/javascript" src="<c:url value="/js/jquery-1.4.4.min.js" />
+        ">
+
+        </script>
+        <script language="JavaScript">
+            
+            jQuery(function(){
+            
+                $("#getbook").click(function(){
+                    var type = $("#book").val();
+					if(type==""||type==null){
+						return;
+					}
+                    var loadbookURL = "<%=path%>/bookServle?type=" + type + "&date=" + new Date() + "";
+                    $.get(loadbookURL, function(jsonData){
+                        $("tbody").empty();
+                        $.each(jsonData, function(index, item){
+                            item = jsonData;
+                            var tr = $("<tr></tr>");
+                            tr.append("<td>" + item[index].titleId + "</td>");
+                            tr.append("<td>" + item[index].title + "</td>");
+                            tr.append("<td>" + item[index].type + "</td>");
+                            tr.append("<td>" + item[index].price + "</td>");
+                            tr.append("<td>" + item[index].sales + "</td>");
+                            tr.append("<td>" + item[index].pubdate + "</td>");
+                            $("tbody").append(tr);
+                            
+                        });
+                        
+                        
+                        
+                        
+                    }, "json");
+                    
+                });
+                
+            })
+        </script>
+    </head>
+    <body>
+        <h2>书籍信息查询</h2>
+        <form action="#">
+            <div style="margin-top:50px; ">
+                <span>书籍类型</span>
+                <select name="booklist" id="book">
+                    <option value="">==请选择==</option>
+                    <c:forEach var="type" items="${typelist}">
+                        <option value="${type}">${type}</option>
+                    </c:forEach>
+                </select>
+                <input type="button" value="查询" id="getbook"/>
+            </div>
+        </form><hr>
+        <table border="1px" width="500px" height="300px" style="margin-top:100px;">
+            <thead>
+                <th>
+                    编号
+                </th>
+                <th>
+                    标题
+                </th>
+                <th>
+                    类型
+                </th>
+                <th>
+                    价格
+                </th>
+                <th>
+                    销量
+                </th>
+                <th>
+                    出版日期
+                </th>
+            </thead>
+            <tbody>
+                <c:forEach var="book" items="${booklist}">
+                    <tr>
+                        <td>
+                            ${book.titleId }
+                        </td>
+                        <td>
+                            ${book.title }
+                        </td>
+                        <td>
+                            ${book.type}
+                        </td>
+                        <td>
+                            <span>$</span>
+                            ${book.price}
+                        </td>
+                        <td>
+                            ${book.sale}
+                        </td>
+                        <td>
+                            ${book.pubdate}
+                        </td>
+                    </tr>
+                </c:forEach>
+            </tbody>
+        </table>
+    </body>
+</html>

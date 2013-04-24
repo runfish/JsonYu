@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="14" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
-<window height="738" maximized="true" width="1024" x="125" y="0">
+<window height="738" maximized="true" width="886" x="175" y="0">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.maven.ide.eclipse.views.MavenIndexesView"/>
 </fastViewData>
@@ -10,6 +10,7 @@
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="101" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.aptana.ide.editors.actionSet" itemType="typeToolBarContribution" x="61" y="22"/>
@@ -28,12 +29,19 @@
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="s.com.aptana.ide.core.ui.actionSet.ShowAptanaView" itemType="typeToolBarContribution" x="95" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.aptana.ide.editors.HTMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" itemType="typePlaceholder" x="115" y="22"/>
+<coolItem id="com.genuitec.eclipse.j2eedt.core.editor.tld" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.NoSourceFoundEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" itemType="typePlaceholder" x="38" y="22"/>
+<coolItem id="com.genuitec.eclipse.sqlexplorer.editors.SQLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.ide.editors.HTMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="115" y="22"/>
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="net.sf.jadclipse.JadclipseClassFileEditor" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -43,15 +51,39 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BookServle.java" partName="BookServle.java" path="E:/workplace/JsonYu/booksearch/src/com/dp/book/controller/BookServle.java" title="BookServle.java" tooltip="booksearch/src/com/dp/book/controller/BookServle.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/booksearch/src/com/dp/book/controller/BookServle.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="822"/>
+</editor>
+<editor id="com.aptana.ide.editors.HTMLEditor" name="listbook.jsp" partName="listbook.jsp" path="E:/workplace/JsonYu/booksearch/WebRoot/jsps/listbook.jsp" title="listbook.jsp" tooltip="booksearch/WebRoot/jsps/listbook.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/booksearch/WebRoot/jsps/listbook.jsp"/>
+</editor>
+<editor focus="true" id="org.eclipse.ui.DefaultTextEditor" name="db_sql" partName="db_sql" path="E:/workplace/JsonYu/booksearch/WebRoot/doc/db_sql" title="db_sql" tooltip="booksearch/WebRoot/doc/db_sql" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/booksearch/WebRoot/doc/db_sql"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="386"/>
+</editor>
 </editors>
 <views>
 <view id="com.genuitec.javascript.debug.ui.scriptView" partName="JavaScript Scripts Inspector"/>
-<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions"/>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState columnWidth0="43" columnWidth1="19" columnWidth2="253" columnWidth3="78" columnWidth4="153" columnWidth5="63" columnWidth6="0" horizontalPosition="0" verticalPosition="0">
+<columnOrder columnOrderIndex="0"/>
+<columnOrder columnOrderIndex="1"/>
+<columnOrder columnOrderIndex="2"/>
+<columnOrder columnOrderIndex="3"/>
+<columnOrder columnOrderIndex="4"/>
+<columnOrder columnOrderIndex="5"/>
+<columnOrder columnOrderIndex="6"/>
+</viewState>
+</view>
 <view id="uky.article.imageviewer.views.ImageView" partName="Image Preview">
 <viewState/>
 </view>
@@ -65,8 +97,9 @@
 <viewState/>
 </view>
 <view id="org.maven.ide.eclipse.views.MavenIndexesView" partName="Maven Indexes"/>
-<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
-<view id="com.genuitec.eclipse.ui.HTMLView" partName="Web Browser"/>
+<view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
+<viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false"/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
@@ -109,6 +142,9 @@
 <view id="com.aptana.ide.debug.ui.scriptsView" partName="Loaded Scripts"/>
 <view id="com.genuitec.eclipse.ast.deploy.core.serverview" partName="Servers">
 <viewState/>
+</view>
+<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer" partName="Spring Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.springframework.ide.eclipse.ui.navigator.workingsets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState columnWidth0="253" columnWidth1="78" columnWidth2="153" columnWidth3="63" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
@@ -176,6 +212,7 @@
 <alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
 <alwaysOnActionSet id="com.genuitec.eclipse.uml.actions"/>
 <alwaysOnActionSet id="com.genuitec.eclipse.web20.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
 <show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
 <show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
@@ -220,15 +257,13 @@
 <perspective_action id="com.genuitec.eclipse.web20.perspective"/>
 <perspective_action id="com.genuitec.dali.adapter.persistencePerspective"/>
 <perspective_action id="com.genuitec.eclipse.dehory.dehoryperspective"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
-<view id="com.genuitec.eclipse.ui.HTMLView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="uky.article.imageviewer.views.ImageView"/>
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
 <fastViewBars/>
@@ -247,8 +282,8 @@
 <presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.15571956" ratioLeft="211" ratioRight="1144" relationship="2" relative="cvslocation"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@c510e3" ratio="0.9031079" ratioLeft="988" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.17564575" ratioLeft="238" ratioRight="1117" relationship="2" relative="cvslocation"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@c510e3" ratio="0.9061116" ratioLeft="1023" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
@@ -257,43 +292,43 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1d7bd04" ratio="0.54910713" ratioLeft="369" ratioRight="303" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c510e3">
-<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottom" ratio="0.7647059" ratioLeft="481" ratioRight="148" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="com.genuitec.eclipse.ui.HTMLView" ratio="0.5" ratioLeft="53" ratioRight="53" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1d7bd04"/>
+<info part="com.genuitec.eclipse.ast.deploy.core.serverview" ratio="0.5" ratioLeft="53" ratioRight="53" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1d7bd04"/>
+<info part="org.eclipse.search.ui.views.SearchView" ratio="0.5" ratioLeft="53" ratioRight="53" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1d7bd04"/>
+<info part="org.eclipse.ui.views.BookmarkView" ratio="0.5" ratioLeft="53" ratioRight="53" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1d7bd04"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@139a6fb" ratio="0.79605263" ratioLeft="484" ratioRight="124" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
-<page content="com.genuitec.eclipse.ui.HTMLView" label="Web Browser"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="topleft" ratio="0.39880952" ratioLeft="268" ratioRight="404" relationship="4" relative="cvslocation">
 <folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
-<page content="org.eclipse.jdt.ui.TypeHierarchy" label="Hierarchy"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomleft" ratio="0.7376788" ratioLeft="464" ratioRight="165" relationship="4" relative="topleft">
+<info folder="true" part="bottomleft" ratio="0.9427663" ratioLeft="593" ratioRight="36" relationship="4" relative="topleft">
 <folder activePageID="uky.article.imageviewer.views.ImageView" appearance="2" expanded="2">
 <page content="uky.article.imageviewer.views.ImageView" label="Image Preview"/>
 <page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
@@ -392,35 +427,46 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="com.genuitec.javascript.debug.ui.scriptView"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="com.aptana.ide.debug.ui.scriptsView"/>
-<view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
-<fastViews>&#x0A;<view id="org.maven.ide.eclipse.views.MavenIndexesView" ratio="0.3"/>
+<fastViews>
+<view id="org.maven.ide.eclipse.views.MavenIndexesView" ratio="0.3"/>
 </fastViews>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="com.genuitec.eclipse.ast.deploy.core.serverview" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.75" ratioLeft="474" ratioRight="158" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.9538951" ratioLeft="600" ratioRight="29" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="com.genuitec.javascript.debug.ui.scriptView" label="JavaScript Scripts Inspector"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.atf.mozilla.ide.ui.views.console" label="LabelNotFound"/>
@@ -428,30 +474,216 @@
 <page content="org.eclipse.datatools.sqltools.result.resultView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
-</folder>
-</info>
-<info part="org.eclipse.ui.editorss" ratio="0.44936708" ratioLeft="213" ratioRight="261" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<page content="org.eclipse.atf.mozilla.ide.ui.views.inspector" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.BreakpointView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
-<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
-<page content="com.aptana.ide.debug.ui.scriptsView" label="Loaded Scripts"/>
-<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
-<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<page content="org.eclipse.atf.mozilla.ide.debug.ui.scriptview" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.42713568" ratioLeft="255" ratioRight="342" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<page content="org.eclipse.atf.mozilla.ide.ui.views.inspector" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="com.aptana.ide.debug.ui.scriptsView" label="Loaded Scripts"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.eclipse.atf.mozilla.ide.debug.ui.scriptview" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
+<alwaysOnActionSet id="a.com.aptana.ide.core.ui.actionSet.myaptana"/>
+<alwaysOnActionSet id="x.com.aptana.ide.core.ui.actionSet.myaptana"/>
+<alwaysOnActionSet id="c.com.aptana.ide.server.cloud.actionSet1"/>
+<alwaysOnActionSet id="y.com.aptana.ide.server.cloud.actionSet1"/>
+<alwaysOnActionSet id="eclipsemonkeyAction.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.WorkingSetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<alwaysOnActionSet id="org.polarion.team.svn.ui.menu.help"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.comunity.essentials"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.deploytools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.test.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.desktop"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.screencapture"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.examples.actionSet"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.hibernatetools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.webtools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.jsftools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.faceletstools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.maven"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.jpatools"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.portlet.portletactions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.springtools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.strutstools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.tapestrytools"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.ws.xfire.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.webservices"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.about.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.product.actions"/>
+<alwaysOnActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.ws.explorer.explorer"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.ui.navigation"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.aop.ui.matcher.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.aop.ui.ActionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.beans.search.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.beans.ui.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.beans.ui.ActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.core.ui.actionSet.aptanamenu"/>
+<alwaysOnActionSet id="s.com.aptana.ide.core.ui.actionSet.ShowAptanaView"/>
+<alwaysOnActionSet id="com.aptana.ide.server.jetty.menuActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.intro.messageCenterActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.pathtools.actionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.server.cloud.ActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.update.actionSet"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.web20.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.jdt.ui.SourceView"/>
+<show_view_action id="org.eclipse.jdt.ui.JavadocView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator"/>
+<show_view_action id="org.springframework.ide.eclipse.aop.ui.tracing.eventTraceView"/>
+<show_view_action id="org.springframework.ide.eclipse.ui.navigator.springExplorer"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewEnumCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewAnnotationCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<new_wizard_action id="com.genuitec.eclipse.j2eedt.ui.wizard.EJBProjectCreationWizard"/>
+<new_wizard_action id="com.genuitec.eclipse.j2eedt.ui.wizard.NewEARProjectWizard"/>
+<new_wizard_action id="com.genuitec.eclipse.j2eedt.ui.wizard.WebProjectCreationWizard"/>
+<new_wizard_action id="com.genuitec.eclipse.ws.xfire.wizards.NewXFireWebProjectWizard1"/>
+<new_wizard_action id="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard"/>
+<new_wizard_action id="org.maven.ide.eclipse.wizards.Maven2ProjectWizard"/>
+<perspective_action id="com.genuitec.myeclipse.perspective.myeclipseperspective"/>
+<perspective_action id="com.genuitec.eclipse.uml.umlPerspective"/>
+<perspective_action id="com.genuitec.eclipse.imageeditor.perspective"/>
+<perspective_action id="com.genuitec.eclipse.sqlexplorer.perspectives.SQLExplorerPluginPerspective"/>
+<perspective_action id="com.genuitec.eclipse.hibernate.perspective.HibernatePerspective"/>
+<perspective_action id="com.genuitec.eclipse.web20.perspective"/>
+<perspective_action id="com.genuitec.dali.adapter.persistencePerspective"/>
+<perspective_action id="com.genuitec.eclipse.dehory.dehoryperspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<fastViews>
+<view id="org.maven.ide.eclipse.views.MavenIndexesView" ratio="0.3"/>
+</fastViews>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.23173432" ratioLeft="314" ratioRight="1041" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.views.ProgressView" ratio="0.62171054" ratioLeft="378" ratioRight="230" relationship="4" relative="org.eclipse.ui.editorss"/>
+<info part="org.eclipse.search.ui.views.SearchView" ratio="0.5" ratioLeft="588" ratioRight="588" relationship="2" relative="org.eclipse.ui.views.ProgressView"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@bc3c35" ratio="0.5" ratioLeft="588" ratioRight="588" relationship="2" relative="org.eclipse.ui.views.ProgressView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.views.ProblemView" ratio="0.5" ratioLeft="588" ratioRight="588" relationship="2" relative="org.eclipse.ui.internal.ViewStack@bc3c35"/>
+<info part="org.eclipse.jdt.ui.JavadocView" ratio="0.5" ratioLeft="588" ratioRight="588" relationship="2" relative="org.eclipse.ui.internal.ViewStack@bc3c35"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1fdf367" ratio="0.5" ratioLeft="43" ratioRight="43" relationship="4" relative="org.eclipse.ui.internal.ViewStack@bc3c35">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.views.BookmarkView" ratio="0.5" ratioLeft="588" ratioRight="588" relationship="2" relative="org.eclipse.ui.views.ProgressView"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@776527" ratio="0.85726494" ratioLeft="1003" ratioRight="167" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator" ratio="0.5" ratioLeft="229" ratioRight="229" relationship="4" relative="org.eclipse.ui.internal.ViewStack@776527"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@73abd8" ratio="0.5" ratioLeft="229" ratioRight="229" relationship="4" relative="org.eclipse.ui.internal.ViewStack@776527">
+<folder activePageID="org.springframework.ide.eclipse.ui.navigator.springExplorer" appearance="2" expanded="2">
+<page content="org.springframework.ide.eclipse.ui.navigator.springExplorer" label="Spring Explorer"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -460,14 +692,161 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/booksearch/src/com/dp/book/service/BookService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/booksearch/src/com/dp/book/serviceimpl/BookServiceImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" path="/booksearch/WebRoot/jsps/listbook.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/booksearch/src/com/dp/book/controller/BookServle.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/booksearch/src/com/dp/book/dao/BookDao.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/booksearch/src/com/dp/book/daoimpl/BookDaoImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/booksearch/src/com/dp/book/controller/BookServle.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" path="/booksearch/WebRoot/jsps/listbook.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/booksearch/WebRoot/doc/db_sql"/>
+</editors>
+<item historyLabel="BookServle.java" index="3">
+<position info="not_deleted" x="1060" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="3">
+<position info="not_deleted" x="870" y="0"/>
+</item>
+<item historyLabel="listbook.jsp" index="2"/>
+<item historyLabel="BookServle.java" index="3">
+<position info="not_deleted" x="694" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="3">
+<position info="not_deleted" x="736" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="3">
+<position info="not_deleted" x="565" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="3">
+<position info="not_deleted" x="1060" y="0"/>
+</item>
+<item historyLabel="listbook.jsp" index="2"/>
+<item historyLabel="BookServiceImpl.java" index="1">
+<position info="not_deleted" x="668" y="0"/>
+</item>
+<item historyLabel="BookDao.java" index="4">
+<position info="not_deleted" x="252" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="3">
+<position info="not_deleted" x="849" y="0"/>
+</item>
+<item historyLabel="BookDao.java" index="4">
+<position info="not_deleted" x="252" y="0"/>
+</item>
+<item historyLabel="BookDao.java" index="4">
+<position info="not_deleted" x="223" y="0"/>
+</item>
+<item historyLabel="BookServiceImpl.java" index="1">
+<position info="not_deleted" x="668" y="0"/>
+</item>
+<item historyLabel="BookServiceImpl.java" index="1">
+<position info="not_deleted" x="550" y="0"/>
+</item>
+<item historyLabel="BookDaoImpl.java" index="5">
+<position info="not_deleted" x="2072" y="0"/>
+</item>
+<item historyLabel="BookDaoImpl.java" index="5">
+<position info="not_deleted" x="1976" y="0"/>
+</item>
+<item historyLabel="BookDaoImpl.java" index="5">
+<position info="not_deleted" x="1968" y="0"/>
+</item>
+<item historyLabel="BookDaoImpl.java" index="5">
+<position info="not_deleted" x="2507" y="0"/>
+</item>
+<item historyLabel="BookDaoImpl.java" index="5">
+<position info="not_deleted" x="2505" y="0"/>
+</item>
+<item historyLabel="BookDaoImpl.java" index="5">
+<position info="not_deleted" x="3007" y="0"/>
+</item>
+<item historyLabel="BookServiceImpl.java" index="1">
+<position info="not_deleted" x="548" y="0"/>
+</item>
+<item historyLabel="BookService.java" index="0">
+<position info="not_deleted" x="261" y="0"/>
+</item>
+<item historyLabel="BookService.java" index="0">
+<position info="not_deleted" x="232" y="0"/>
+</item>
+<item historyLabel="BookServiceImpl.java" index="1">
+<position info="not_deleted" x="668" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="3">
+<position info="not_deleted" x="849" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="3">
+<position/>
+</item>
+<item historyLabel="listbook.jsp" index="2"/>
+<item historyLabel="BookServle.java" index="3">
+<position info="not_deleted" x="1056" y="0"/>
+</item>
+<item historyLabel="listbook.jsp" index="2"/>
+<item historyLabel="BookService.java" index="0">
+<position info="not_deleted" x="232" y="0"/>
+</item>
+<item historyLabel="listbook.jsp" index="2"/>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="1140" y="0"/>
+</item>
+<item historyLabel="listbook.jsp" index="7"/>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="1148" y="0"/>
+</item>
+<item historyLabel="listbook.jsp" index="7"/>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="1144" y="0"/>
+</item>
+<item historyLabel="listbook.jsp" index="7"/>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="1124" y="0"/>
+</item>
+<item historyLabel="listbook.jsp" index="7"/>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="1124" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="1108" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="822" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="872" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="928" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="1002" y="0"/>
+</item>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="1053" y="10"/>
+</item>
+<item historyLabel="BookServle.java" index="6">
+<position info="not_deleted" x="822" y="0"/>
+</item>
+<item historyLabel="listbook.jsp" index="7"/>
+<item active="true" historyLabel="db_sql" index="8">
+<position/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
 <trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topleft"/>
 <trimItem IMemento.internal.id="bottomleft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@c510e3"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1d7bd04"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -477,54 +856,55 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="com.aptana.ide.intro.StartPageAction"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@139a6fb"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="load01.html" tooltip="itcast1018jquery/WebRoot/load/load01.html">
-<persistable path="/itcast1018jquery/WebRoot/load/load01.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="db_sql" tooltip="booksearch/WebRoot/doc/db_sql">
+<persistable path="/booksearch/WebRoot/doc/db_sql"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="get.html" tooltip="itcast1018jquery/WebRoot/get/get.html">
-<persistable path="/itcast1018jquery/WebRoot/get/get.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="listbook.jsp" tooltip="booksearch/WebRoot/jsps/listbook.jsp">
+<persistable path="/booksearch/WebRoot/jsps/listbook.jsp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="get.jsp" tooltip="itcast1018jquery/WebRoot/get/get.jsp">
-<persistable path="/itcast1018jquery/WebRoot/get/get.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BookServle.java" tooltip="booksearch/src/com/dp/book/controller/BookServle.java">
+<persistable path="/booksearch/src/com/dp/book/controller/BookServle.java"/>
 </file>
-<file factoryID="com.aptana.ide.server.portal.ui.MyAptanaElementFactory" id="com.aptana.ide.server.portal.ui.MyAptanaEditor" name="" tooltip="">
-<persistable/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JsonUtil.java" tooltip="booksearch/src/com/dp/book/utils/JsonUtil.java">
+<persistable path="/booksearch/src/com/dp/book/utils/JsonUtil.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="popu.html" tooltip="itcast1018jquery/WebRoot/popu/popu.html">
-<persistable path="/itcast1018jquery/WebRoot/popu/popu.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BookDaoImpl.java" tooltip="booksearch/src/com/dp/book/daoimpl/BookDaoImpl.java">
+<persistable path="/booksearch/src/com/dp/book/daoimpl/BookDaoImpl.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="test.html" tooltip="itcast1018jquery/WebRoot/ex06/test.html">
-<persistable path="/itcast1018jquery/WebRoot/ex06/test.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BookDao.java" tooltip="booksearch/src/com/dp/book/dao/BookDao.java">
+<persistable path="/booksearch/src/com/dp/book/dao/BookDao.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="val_2.html" tooltip="itcast1018jquery/WebRoot/ex05/val_2.html">
-<persistable path="/itcast1018jquery/WebRoot/ex05/val_2.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="web.xml" tooltip="booksearch/WebRoot/WEB-INF/web.xml">
+<persistable path="/booksearch/WebRoot/WEB-INF/web.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="val_1.html" tooltip="itcast1018jquery/WebRoot/ex05/val_1.html">
-<persistable path="/itcast1018jquery/WebRoot/ex05/val_1.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BookServiceImpl.java" tooltip="booksearch/src/com/dp/book/serviceimpl/BookServiceImpl.java">
+<persistable path="/booksearch/src/com/dp/book/serviceimpl/BookServiceImpl.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="class.html" tooltip="itcast1018jquery/WebRoot/dom/class.html">
-<persistable path="/itcast1018jquery/WebRoot/dom/class.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BookService.java" tooltip="booksearch/src/com/dp/book/service/BookService.java">
+<persistable path="/booksearch/src/com/dp/book/service/BookService.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="checkbox.html" tooltip="itcast1018jquery/WebRoot/ex04/checkbox.html">
-<persistable path="/itcast1018jquery/WebRoot/ex04/checkbox.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IndexServlet.java" tooltip="booksearch/src/com/dp/book/controller/IndexServlet.java">
+<persistable path="/booksearch/src/com/dp/book/controller/IndexServlet.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="replace.html" tooltip="itcast1018jquery/WebRoot/dom/replace.html">
-<persistable path="/itcast1018jquery/WebRoot/dom/replace.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" tooltip="booksearch/WebRoot/index.jsp">
+<persistable path="/booksearch/WebRoot/index.jsp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="clone.html" tooltip="itcast1018jquery/WebRoot/dom/clone.html">
-<persistable path="/itcast1018jquery/WebRoot/dom/clone.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JDBCUtils.java" tooltip="booksearch/src/com/dp/book/utils/JDBCUtils.java">
+<persistable path="/booksearch/src/com/dp/book/utils/JDBCUtils.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="user.html" tooltip="itcast1018jquery/WebRoot/ex03/user.html">
-<persistable path="/itcast1018jquery/WebRoot/ex03/user.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Book.java" tooltip="booksearch/src/com/dp/book/domain/Book.java">
+<persistable path="/booksearch/src/com/dp/book/domain/Book.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="outer_insert.html" tooltip="itcast1018jquery/WebRoot/dom/outer_insert.html">
-<persistable path="/itcast1018jquery/WebRoot/dom/outer_insert.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BookService.java" tooltip="booksearch/src/com/dp/book/server/BookService.java">
+<persistable path="/booksearch/src/com/dp/book/server/BookService.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.HTMLEditor" name="remove.html" tooltip="itcast1018jquery/WebRoot/dom/remove.html">
-<persistable path="/itcast1018jquery/WebRoot/dom/remove.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StudentPK.java" tooltip="hibernate/src/com/dp/hiberbate/domain/StudentPK.java">
+<persistable path="/hibernate/src/com/dp/hiberbate/domain/StudentPK.java"/>
 </file>
 </mruList>
 </workbench>

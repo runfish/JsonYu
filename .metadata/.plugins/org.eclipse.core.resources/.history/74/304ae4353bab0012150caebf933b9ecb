@@ -1,0 +1,270 @@
+package com.dp.action;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.dp.utils.BaseAction;
+import com.dp.utils.JDBCUtils;
+import com.dp.utils.JsonUtil;
+import com.opensymphony.xwork2.ActionContext;
+
+public class DeptACtion extends BaseAction {
+	@Override
+	public String execute() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String list() {
+		Connection conn = null;
+		Statement statement = null;
+		ResultSet rs = null;
+		String sql = null;
+		Map<String, Object> deptMap = null;
+		List<Map<String, Object>> listMap = new ArrayList<Map<String, Object>>();
+		try {
+			conn = JDBCUtils.getConn();
+			statement = conn.createStatement();
+			sql = "select * from t_dept order by dept_id asc";
+			rs = statement.executeQuery(sql);
+
+			while (rs.next()) {
+				deptMap = new HashMap<String, Object>();
+				String dept_id = rs.getString("dept_id");
+				String dept_name = rs.getString("dept_name");
+				String parentid = rs.getString("parentid");
+				int grade = rs.getInt("grade");
+				int isleaf = rs.getInt("isleaf");
+
+				deptMap.put("id", dept_id);
+				deptMap.put("name", dept_name);
+				deptMap.put("pId", parentid);
+
+				if (grade == 1) {
+					deptMap.put("open", true);
+				}
+
+				listMap.add(deptMap);
+
+			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			JDBCUtils.closeConn();
+			JDBCUtils.closeRes(statement, rs);
+		}
+
+		ActionContext actionContext = ActionContext.getContext();
+		String jsonStr = JsonUtil.objectToJson(listMap);
+		actionContext.put("jsonStr", jsonStr);
+
+		return "list";
+	}
+
+	public String list2() {
+
+		return "list2";
+	}
+
+	public String list_json() {
+		Connection conn = null;
+		Statement statement = null;
+		ResultSet rs = null;
+		String sql = null;
+		Map<String, Object> deptMap = null;
+		List<Map<String, Object>> listMap = new ArrayList<Map<String, Object>>();
+
+		String id = request.getParameter("id");
+		String name = request.getParameter("name");
+		System.out.println(id);
+		System.out.println(name);
+		try {
+			conn = JDBCUtils.getConn();
+			statement = conn.createStatement();
+			if (id == null || id.equals("") || id.equalsIgnoreCase("null")) {
+				sql = "select * from t_dept where parentid='0' order by dept_id asc";
+			} else {
+				sql = "select * from t_dept where parentid=" + id
+						+ " order by dept_id asc";
+			}
+			rs = statement.executeQuery(sql);
+
+			while (rs.next()) {
+				deptMap = new HashMap<String, Object>();
+				String dept_id = rs.getString("dept_id");
+				String dept_name = rs.getString("dept_name");
+				String parentid = rs.getString("parentid");
+				int grade = rs.getInt("grade");
+				int isleaf = rs.getInt("isleaf");
+
+				deptMap.put("id", dept_id);
+				deptMap.put("name", dept_name);
+				deptMap.put("pId", parentid);
+
+				if (grade == 1) {
+					deptMap.put("open", true);
+				}
+				if (isleaf == 0) {
+					deptMap.put("isParent", true);
+				} else {
+					deptMap.put("isParent", false);
+				}
+
+				listMap.add(deptMap);
+
+			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			JDBCUtils.closeConn();
+			JDBCUtils.closeRes(statement, rs);
+		}
+
+		ActionContext actionContext = ActionContext.getContext();
+		String jsonStr = JsonUtil.objectToJson(listMap);
+		out.print(jsonStr);
+		out.flush();
+		out.close();
+
+		return this.NONE;
+	}
+
+	public String getChilds() {
+		String parentId = request.getParameter("parentid");
+		Connection conn = null;
+		Statement statement = null;
+		ResultSet rs = null;
+		Map<String, Object> deptMap = null;
+		List<Map<String, Object>> deptList = new ArrayList<Map<String, Object>>();
+		try {
+			conn = JDBCUtils.getConn();
+			statement = conn.createStatement();
+			StringBuffer querySQL = new StringBuffer();
+			querySQL.append("select * from t_dept");
+			querySQL.append("  where 1=1 ");
+			querySQL.append(" and dept_id like '"+parentId+"%'");
+			querySQL.append("  order by dept_id asc");
+			System.out.println(querySQL);
+			rs = statement.executeQuery(querySQL.toString());
+			while (rs.next()) {
+				deptMap = new HashMap<String, Object>();
+				String dept_id = rs.getString("dept_id");
+				String dept_name = rs.getString("dept_name");
+				String parentid = rs.getString("parentid");
+				int grade = rs.getInt("grade");
+				int isleaf = rs.getInt("isleaf");
+				for(int i=1;i<=grade;i++){
+					dept_name = "&nbsp;&nbsp;&nbsp;&nbsp;"+dept_name;
+					
+				}
+
+				deptMap.put("dept_id", dept_id);
+				deptMap.put("dept_name", dept_name);
+				deptMap.put("parentid", parentid);
+				deptMap.put("grade", grade);
+				deptMap.put("isleaf", isleaf);
+				deptList.add(deptMap);
+
+			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			JDBCUtils.closeConn();
+			JDBCUtils.closeRes(statement, rs);
+		}
+
+		ActionContext actionContext = ActionContext.getContext();
+		actionContext.put("deptList",deptList );
+		return "getchild";
+	}
+	
+	public String deleteDept(){
+		
+		String deptId = request.getParameter("dept_id");
+		Connection conn = null;
+		Statement statement = null;
+		ResultSet rs = null;
+		try {
+			conn = JDBCUtils.getConn();
+			statement = conn.createStatement();
+			StringBuffer querySQL = new StringBuffer();
+			String parentId = null;
+			
+			querySQL.append("  select parentid from t_dept ");
+			querySQL.append("  where 1=1 ");
+			querySQL.append("  and dept_id = '"+deptId+"'");
+
+			System.out.println(querySQL.toString());
+			conn.setAutoCommit(false);
+			rs = statement.executeQuery(querySQL.toString());
+			while (rs.next()) {
+				
+				 parentId = rs.getString(1);
+
+				}
+			  querySQL.setLength(0);
+			
+			
+			querySQL.append("select count(1) childcount  from t_dept");
+			querySQL.append("  where 1=1 ");
+			querySQL.append("  and parentid='"+parentId+"'");
+
+			System.out.println(querySQL);
+			rs = statement.executeQuery(querySQL.toString());
+			int childCount = 0;
+			while (rs.next()) {
+	
+			  childCount = rs.getInt("childcount");
+
+			}
+			
+			StringBuffer deleteSQL = new StringBuffer();
+			
+			deleteSQL.append("delete from  t_dept ");
+			deleteSQL.append(" where 1=1 ");
+			deleteSQL.append("  and dept_id ='"+deptId+"'");
+		 
+			if(childCount==1){
+				
+				StringBuffer updateSQL = new StringBuffer();
+				updateSQL.append("update t_dept ");
+				updateSQL.append(" set isleaf = 1");
+				updateSQL.append(" where 1=1");
+				updateSQL.append(" and dept_id='"+parentId+"'");
+				
+				statement.executeUpdate(updateSQL.toString());
+				
+			}
+			
+			conn.commit();
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			try {
+				conn.rollback();
+			} catch (SQLException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		} finally {
+			JDBCUtils.closeConn();
+			JDBCUtils.closeRes(statement, rs);
+		}
+
+		return this.NONE;
+	}
+	
+}

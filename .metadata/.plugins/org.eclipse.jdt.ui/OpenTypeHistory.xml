@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=hibernate/src&lt;com.dp.hiberbate.domain{Student.java[Student" modifiers="1" timestamp="1366718120116"/>
+<typeInfo handle="=booksearch/src&lt;com.dp.book.dao{BookDao.java[BookDao" modifiers="513" timestamp="1366721244635"/>
+</typeInfoHistroy>

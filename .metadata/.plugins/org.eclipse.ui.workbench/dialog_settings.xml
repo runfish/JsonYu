@@ -15,18 +15,23 @@
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
 	</section>
 	<section name="PreferencesExportWizard">
-		<item key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID" value="true"/>
 		<item key="WizardPreferencesExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID" value="false"/>
+		<item key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID" value="true"/>
 		<item key="" value="F:\test.epf"/>
 		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
 			<item value="F:\test.epf"/>
 		</list>
+	</section>
+	<section name="EditorSelectionDialog">
+		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
 	</section>
 	<section name="PreferencesImportWizard">
 		<item key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID" value="true"/>
 		<item key="" value="F:\test.epf"/>
 		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
 			<item value="F:\test.epf"/>
+			<item value="C:\Users\Administrator\Desktop\theme-30.epf"/>
+			<item value="C:\Users\Administrator\Desktop\theme-66.epf"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">

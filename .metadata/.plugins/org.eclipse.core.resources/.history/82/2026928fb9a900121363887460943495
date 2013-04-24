@@ -1,0 +1,57 @@
+package com.xiaoyu.thread;
+
+import java.util.Map;
+import java.util.Random;
+
+public class ThreadScopeShareData {
+
+	/**
+	 * @param args
+	 */
+	private static int data = 0;
+	Map<Thread, Integer> map = new Map<Thread, Integer>();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Thread( new Runnable(){
+
+			for(int i=0;i<3;i++){
+			public void run() {
+				// TODO Auto-generated method stub
+				data = new Random().nextInt();
+				System.out.println(Thread.currentThread().getName()+"put data into data"+data);
+				new A().get();
+				new B().get();
+				new C().get();
+				
+			}
+			
+			
+		}).start();
+		}
+
+	}
+	
+	static class A{
+		private  int  get() {
+			
+			return 0;
+
+		}
+	}
+	static class B{
+		private int  get() {
+			return 0;
+			// TODO Auto-generated method stub
+
+		}
+	}
+	
+	static class C{
+		private int  get() {
+			return 0;
+			// TODO Auto-generated method stub
+
+		}
+	}
+
+}

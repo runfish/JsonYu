@@ -1,0 +1,10 @@
+Name     Type          Nullable Default Comments 
+-------- ------------- -------- ------- -------- 
+TITLE_ID CHAR(6)                                 
+TITLE    VARCHAR2(100)                           
+TYPE     VARCHAR2(50)                            
+PRICE    NUMBER(5,2)                             
+SALES    NUMBER(5)     Y                         
+PUBDATE  VARCHAR2(30)
+
+    

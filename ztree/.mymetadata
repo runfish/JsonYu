@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ztree"
+  id="myeclipse.1366548965083"
+  context-root="/ztree"
+  j2ee-spec="5.0"
+  archive="ztree.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

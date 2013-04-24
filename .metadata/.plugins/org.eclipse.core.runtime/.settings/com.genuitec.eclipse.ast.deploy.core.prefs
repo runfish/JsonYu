@@ -1,12 +1,22 @@
-#Sat Apr 06 16:00:13 CST 2013
-tomcat6Server.ognl.earProjectName=
-tomcat6Server.ognl.shouldBackup=false
-tomcat6Server.ognl.shouldOverwrite=false
-tomcat6Server.ognl.deployIsOverProject=false
-tomcat6Server.ognl.isDeployed=true
-tomcat6Server.ognl.type=WebDeployment
-tomcat6Server.ognl.contextRoot=/ognl
+#Wed Apr 24 22:10:36 CST 2013
+tomcat6Server.homework.deployIsOverProject=false
+tomcat6Server.booksearch.shouldOverwrite=false
+tomcat6Server.booksearch.deployIsOverProject=false
+tomcat6Server.homework.isDeployed=true
+tomcat6Server.booksearch.contextRoot=/book
+tomcat6Server.booksearch.type=WebDeployment
+tomcat6Server.booksearch.shouldBackup=false
 eclipse.preferences.version=1
-tomcat6Server.ognl.isExploded=true
-tomcat6Server.ognl.deploymentPath=D\:\\apache-tomcat-6.0.36\\webapps\\ognl
-tomcat6Server.ognl.isUptoDate=true
+tomcat6Server.booksearch.isDeployed=true
+tomcat6Server.homework.isUptoDate=true
+tomcat6Server.homework.contextRoot=/homework
+tomcat6Server.homework.isExploded=true
+tomcat6Server.homework.deploymentPath=D\:\\apache-tomcat-6.0.36\\webapps\\homework
+tomcat6Server.booksearch.earProjectName=
+tomcat6Server.homework.shouldBackup=false
+tomcat6Server.booksearch.deploymentPath=D\:\\apache-tomcat-6.0.36\\webapps\\book
+tomcat6Server.homework.type=WebDeployment
+tomcat6Server.booksearch.isUptoDate=true
+tomcat6Server.homework.earProjectName=
+tomcat6Server.homework.shouldOverwrite=false
+tomcat6Server.booksearch.isExploded=true

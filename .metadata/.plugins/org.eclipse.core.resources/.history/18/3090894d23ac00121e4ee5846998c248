@@ -1,0 +1,12 @@
+package com.dp.book.service;
+
+import java.util.List;
+
+import com.dp.book.domain.Book;
+
+public interface  BookService {
+
+	List<Book> loadAll();
+	
+	List<String> loadType();
+}

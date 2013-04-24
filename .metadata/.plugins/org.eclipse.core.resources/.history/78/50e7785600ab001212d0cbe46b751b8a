@@ -1,0 +1,261 @@
+package com.action;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import oracle.net.aso.g;
+import oracle.net.aso.q;
+import oracle.net.aso.r;
+
+import com.opensymphony.xwork2.Action;
+import com.opensymphony.xwork2.ActionContext;
+import com.util.BaseAction;
+import com.util.JdbcUtil;
+import com.util.JsonInfo;
+import com.util.JsonUtil;
+
+public class DeptAction extends BaseAction {
+
+	@Override
+	public String execute() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String list() throws Exception {
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		String sql = null;
+		List<Map<String, Object>> deptList = new ArrayList<Map<String, Object>>();
+		try {
+			sql = "Select * From T_Sys_Dept order by dept_id asc";
+			conn = JdbcUtil.getConn();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(sql);
+			Map<String, Object> rowMap = null;
+
+			while (rs.next()) {
+				rowMap = new HashMap<String, Object>();
+
+				String dept_id = rs.getString("dept_id");
+				String dept_name = rs.getString("dept_name");
+				String parentid = rs.getString("parentid");
+				int grade = rs.getInt("grade");
+				int isLeaf = rs.getInt("isLeaf");
+
+				rowMap.put("id", dept_id);
+				rowMap.put("pId", parentid);
+				rowMap.put("name", dept_id + " " + dept_name);
+				if (grade == 1) {
+					rowMap.put("open", true);
+				}
+				deptList.add(rowMap);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.closeResource(rs, stmt, conn);
+		}
+		ActionContext context = ActionContext.getContext();
+		// 将集合转成json字符串
+		String jsonStr = JsonUtil.objectToJson(deptList);
+
+		context.put("jsonStr", jsonStr);
+		return "list";
+	}
+
+	public String list2() throws Exception {
+
+		return "list2";
+	}
+
+	public String list2_sync() throws Exception {
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		String sql = null;
+		List<Map<String, Object>> deptList = new ArrayList<Map<String, Object>>();
+
+		try {
+			String id = request.getParameter("id");
+			String name = request.getParameter("name");
+
+			System.out.println("id = " + id);
+			System.out.println("name = " + name);
+			if (id == null || id.equals("") || id.equalsIgnoreCase("null")) {
+				sql = "Select * From T_Sys_Dept where parentid = '0' order by dept_id asc";
+			} else {
+				sql = "Select * From T_Sys_Dept where parentid = '" + id
+						+ "' order by dept_id asc";
+			}
+
+			conn = JdbcUtil.getConn();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(sql);
+			Map<String, Object> rowMap = null;
+
+			while (rs.next()) {
+				rowMap = new HashMap<String, Object>();
+
+				String dept_id = rs.getString("dept_id");
+				String dept_name = rs.getString("dept_name");
+				String parentid = rs.getString("parentid");
+				int grade = rs.getInt("grade");
+				int isLeaf = rs.getInt("isLeaf");
+
+				rowMap.put("id", dept_id);
+				rowMap.put("pId", parentid);
+				rowMap.put("name", dept_id + " " + dept_name);
+				if (grade == 1) {
+					rowMap.put("open", true);
+				}
+				if (isLeaf == 0) {
+					rowMap.put("isParent", true);
+				} else {
+					rowMap.put("isParent", false);
+				}
+				deptList.add(rowMap);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.closeResource(rs, stmt, conn);
+		}
+		// 将集合转成json字符串
+		String jsonStr = JsonUtil.objectToJson(deptList);
+		out.print(jsonStr);
+		out.flush();
+		out.close();
+		return this.NONE;
+	}
+
+	public String getChildList2() throws Exception {
+		String parentid = request.getParameter("parentid");
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		String sql = null;
+		List<Map<String, Object>> deptList = new ArrayList<Map<String, Object>>();
+
+		try {
+			StringBuilder querySQL = new StringBuilder();
+			querySQL.append("Select * From T_Sys_Dept");
+			querySQL.append(" where 1 = 1");
+			querySQL.append(" and dept_id like '" + parentid + "%'");
+			querySQL.append(" order by dept_id asc");
+
+			conn = JdbcUtil.getConn();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(querySQL.toString());
+			Map<String, Object> rowMap = null;
+
+			while (rs.next()) {
+				rowMap = new HashMap<String, Object>();
+
+				String dept_id = rs.getString("dept_id");
+				String dept_name = rs.getString("dept_name");
+				String db_parentid = rs.getString("parentid");
+				int grade = rs.getInt("grade");
+				for (int i = 1; i < grade; i++) {
+					dept_name = "&nbsp;&nbsp;&nbsp;&nbsp;" + dept_name;
+				}
+				int isLeaf = rs.getInt("isLeaf");
+
+				rowMap.put("dept_id", dept_id);
+				rowMap.put("dept_name", dept_name);
+				rowMap.put("parentid", db_parentid);
+				rowMap.put("grade", grade);
+				rowMap.put("isLeaf", isLeaf);
+				deptList.add(rowMap);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.closeResource(rs, stmt, conn);
+		}
+		ActionContext actionContext = ActionContext.getContext();
+		actionContext.put("deptList", deptList);
+		return "childList";
+	}
+
+	public String deleteDept() throws Exception {
+		String dept_id = request.getParameter("dept_id");
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		String sql = null;
+		JsonInfo jsonInfo = new JsonInfo();
+
+		try {
+			conn = JdbcUtil.getConn();
+			conn.setAutoCommit(false);
+
+			stmt = conn.createStatement();
+
+			StringBuilder querySQL = new StringBuilder();
+			String parentid = "";
+			querySQL.append("Select parentid From T_Sys_Dept");
+			querySQL.append(" where 1 = 1 and dept_id = '" + dept_id + "'");
+			rs = stmt.executeQuery(querySQL.toString());
+			if (rs.next()) {
+				parentid = rs.getString("parentid");
+			}
+			rs.close();
+
+			querySQL.setLength(0);
+
+			querySQL.append("Select count(1) as childCount ");
+			querySQL.append(" From T_Sys_Dept where 1 = 1");
+			querySQL.append(" and parentid = '" + parentid + "'");
+
+			conn = JdbcUtil.getConn();
+			conn.setAutoCommit(false);
+
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(querySQL.toString());
+
+			int childCount = 0;
+			if (rs.next()) {
+				childCount = rs.getInt("childCount");
+			}
+			rs.close();
+
+			// 删除自身
+			StringBuilder deleteSQL = new StringBuilder();
+			deleteSQL.append("Delete From T_Sys_Dept");
+			deleteSQL.append(" where 1= 1");
+			deleteSQL.append(" and dept_id = '" + dept_id + "'");
+			deleteSQL.append("");
+			stmt.executeUpdate(deleteSQL.toString());
+
+			// 更新父类的信息
+			if (childCount == 1) {
+				StringBuilder updateParent = new StringBuilder();
+				updateParent.append("Update T_Sys_Dept");
+				updateParent.append(" set isLeaf = 1");
+				updateParent.append(" where 1 = 1");
+				updateParent.append(" and dept_id = '" + parentid + "'");
+				stmt.executeUpdate(updateParent.toString());
+			}
+			conn.commit();
+			jsonInfo.setFlag(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+			jsonInfo.setFlag(false);
+			jsonInfo.setMessage(e.getMessage());
+			conn.rollback();
+		} finally {
+			JdbcUtil.closeResource(rs, stmt, conn);
+		}
+		String jsonStr = JsonUtil.objectToJson(jsonInfo);
+		out.print(jsonStr);
+		out.flush();
+		return this.NONE;
+	}
+}

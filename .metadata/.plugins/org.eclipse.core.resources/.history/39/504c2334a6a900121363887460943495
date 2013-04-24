@@ -1,0 +1,13 @@
+package com.xiaoyu.thread;
+
+public class TraditionTimerTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

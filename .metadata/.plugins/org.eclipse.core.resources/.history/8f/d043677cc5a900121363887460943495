@@ -1,0 +1,54 @@
+package com.xiaoyu.thread;
+
+public class Face2 {
+
+	public static void main(String[] args) {
+		ShareData shareData = new ShareData();
+		Thread t1 = new Thread(new MyRunnable1(shareData));
+		
+	}
+}
+
+class MyRunnable1 implements Runnable{
+
+	private ShareData shareData;
+	public MyRunnable1(ShareData shareData){
+		this.shareData = shareData;
+	}
+	public void run() {
+		// TODO Auto-generated method stub
+		shareData.add();
+		
+	}
+	
+}
+class MyRunnable2 implements Runnable{
+	
+	private ShareData shareData;
+	public MyRunnable2(ShareData shareData){
+		this.shareData = shareData;
+	}
+	public void run() {
+		// TODO Auto-generated method stub
+		shareData.minus();
+		
+	}
+	
+}
+
+class ShareData{
+	
+	int j=0;
+	
+	public void add(){
+		j++;
+	System.out.println(Thread.currentThread().getName()+j);
+	}
+	
+	public void minus(){
+		j--;
+		System.out.println(Thread.currentThread().getName()+j);
+	}
+	
+	
+}

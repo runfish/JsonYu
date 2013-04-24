@@ -1,0 +1,45 @@
+package com.xiaoyu.thread;
+
+public class ThreadScopeShareData {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Thread( new Runnable(){
+
+			public void run() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			
+		}).start();
+
+	}
+	
+	static class A{
+		private  int  get() {
+			
+			return 0;
+
+		}
+	}
+	static class B{
+		private int  get() {
+			return 0;
+			// TODO Auto-generated method stub
+
+		}
+	}
+	
+	static class C{
+		private int  get() {
+			return 0;
+			// TODO Auto-generated method stub
+
+		}
+	}
+
+}
